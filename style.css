@@ -9,10 +9,11 @@ html, body{
 	height: 100%;
 	/*font-size: 16px; */
 	font-size: 100%; 
+	color: white;
 	/*background-color: rgba(239, 149, 5, 0.2);*/
 }
 
-
+/*
 @font-face {
 font-family: 'GeosansLight';
 font-style: normal;
@@ -26,25 +27,9 @@ font-family: 'GeosansLight-Oblique';
 font-style: normal;
 font-weight: normal;
 src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
-}
+}*/
 
-/**menu****/
 
-.fondblanc{
-background-color: #fff!important;
-}
-
-.textenoir{
-color: #000!important;
-}
-
-.textenoir:hover{
-background-color: rgba(0,0,0,.7)!important;
-color: #fff!important;
-}
-.bordnoir{
-border: 1px solid #000!important;
-}
 
 .navbar{
 	
@@ -58,7 +43,7 @@ border: 1px solid #000!important;
 	height: 100%;
 	text-transform: uppercase;*/
 	
-	max-width: 317px; /*30%;*/
+	max-width: 25%; /*317px;*/
 	height: 100%;
 	/*background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));*/
 	background-color: rgba(0, 0, 0, 0.3) ;
@@ -86,6 +71,10 @@ border: 1px solid #000!important;
  margin-top: 80px; /*8%;*/
 }
 
+.navbar-brand img{
+ max-width: 100%;
+}
+
 
 .navbar-collapse{
 	margin-right: 10px;
@@ -102,13 +91,60 @@ border: 1px solid #000!important;
 	
 			
 }
-/*
-.navbar-light .navbar-nav .nav-link{
-	color: white;
-		letter-spacing: 1px;
-			transition: all .3s ease-out;
-    -webkit-transition:all .3s ease-out;
-    -o-transition:all .3s ease-out;
-    -moz-transition:all .3s ease-out;
-    -ms-transition:all .3s ease-out;
-}*/
+
+.intro, .layer{
+	margin-left: 30%;
+	
+}
+
+/***************VIDEO*******************/
+
+	#myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+   		z-index:3;
+	}
+	
+	
+		/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	.layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+		top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	/*solves problem with overflowing video in Mac with Chrome */
+	section{
+		overflow: hidden;
+	}
+
+
+
+	/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
+	}
