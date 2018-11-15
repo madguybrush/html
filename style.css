@@ -92,9 +92,17 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 			
 }
 
-.intro, .layer{
+.intro{ /* , .layer*/
 	margin-left: 30%;
-	
+	margin-bottom: 10%;
+}
+
+.imgfixed{
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	/*max-height: 466px;*/
+	max-width: 50%;
 }
 
 /***************VIDEO*******************/
@@ -123,8 +131,10 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 		position: absolute;
 		z-index: 4;
 		width: 100%;
-		left: 0;
-		top: 43%;
+		bottom: 10%;
+		left: 30%;
+		/*left: 0;
+		top: 43%;*/
 
 		/*
 		* Preventing flicker on some browsers
