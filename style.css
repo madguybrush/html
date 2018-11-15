@@ -63,8 +63,32 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 .container{
 	flex-direction: column;
 	height: 100%;
-	
 
+}
+
+.flex-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*-ms-flex-wrap: wrap;
+	flex-wrap: wrap;*/
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items : center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	/*	flex-direction: row;*/
+}
+
+.flex-item{
+	
+}
+
+.fleximg{
+	margin-right: 10%;
+	margin-bottom: 10%;
+	 max-width: 80%;
 }
 
 .navbar-brand{
@@ -103,6 +127,41 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	right: 10%;
 	/*max-height: 466px;*/
 	max-width: 20%;
+}
+
+.tag{
+	color: #A78A3C;
+	font-weight: bold;
+	border: 2px solid #A78A3C;
+	letter-spacing: 0.15em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.4em;
+	padding-bottom: .4em;
+}
+
+.intro h1, .layer h1{
+	margin-top: 0.5em;
+}
+
+.plusbutton{
+		color: white;
+		font-size: 2em;
+		border: 2px solid #fff;
+		width: 60px;
+		height: 60px;
+		border-radius: 60px;
+		font-weight: 200;
+}
+
+.plusbutton:hover{
+		color: white;
+		text-decoration: none;
+}
+
+.searchbutton{
+	width: 25px;
+	color: white;
 }
 
 /***************VIDEO*******************/

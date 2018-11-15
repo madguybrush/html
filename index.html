@@ -48,19 +48,15 @@
 						</li>
 					</ul>
 				</div>	
-				<!--
-				<div id="navbarNavDropdown" class="collapse navbar-collapse">
-					<ul id="main-menu" class="navbar-nav ml-auto">
-						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item"><a title="Panier" href="http://testcapricci.fr/panier/" class="nav-link">Panier</a></li>
-						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-12 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
-							<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
-								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="DVD" href="http://testcapricci.fr/categorie-produit/dvd/" class="dropdown-item">DVD</a></li>
-								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Livres" href="http://testcapricci.fr/categorie-produit/livres/" class="dropdown-item">Livres</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>	
-				-->
+				
+<!-- check dans wordpress caode widget recherche aub/vprod/bprod -->
+				<a href="" class="searchbutton">
+				
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+				</svg>
+				
+				</a>
 				
 			</div>
 			<!-- .container -->
@@ -78,30 +74,59 @@
 			<h1>AFTER MY DEATH</h1>
 			<h2>un film de UI-SEOK Kim</h2>
 			<h3>EN SALLE LE 22 NOVEMBRE 2018</h3>
+			<a href="" class="plusbutton">&nbsp;+&nbsp;</a>
 		</div>
 	</div>
 	
-	<div class="section" id="section1" style="background-image: url(images/fond-LIVRE-HUPPERT.jpg);">
+	<!--<div class="section" id="section1" style="background-image: url(images/fond-LIVRE-HUPPERT.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="intro">
 			<h1>ISABELLE HUPERT</h1>
 			<h2>VIVRE NE VOUS REGARDE PAS <br />un livre de Murielle JOUDET</h2>
 			<h3>EN LIBRAIRIE LE 15 SEPTEMBRE 2018</h3>
 		</div>
 		<img class="imgfixed" alt="logo Capricci" src="images/PremiereCollection-Jaquette-3D-HUPPERT.png">
+	</div>-->
+	
+	<div class="section" id="section1" style="background-image: url(images/fond-LIVRE-HUPPERT.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+		
+	
+			<div class="flex-container">
+	
+				<div class="intro flex-item">
+					<h1>ISABELLE HUPERT</h1>
+					<h2>VIVRE NE VOUS REGARDE PAS <br />un livre de Murielle JOUDET</h2>
+					<h3>EN LIBRAIRIE LE 15 SEPTEMBRE 2018</h3>
+				</div>
+		
+		
+				<div class="flex-item ">
+					<img alt="logo Capricci" src="images/PremiereCollection-Jaquette-3D-HUPPERT.png" class="fleximg">
+				</div>
+	
+			</div>	
+	
 	</div>
-	<div class="section" id="section2" style="background-image: url(images/fond-BadLieutenant.jpg);">
+	
+	<div class="section" id="section2" style="background-image: url(images/fond-BadLieutenant.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
 		<div class="intro">
-			<h1>Enjoy it</h1>
+				<span class="tag">PROCHAINEMENT	</span>
+			<h1>BAD LIEUTENANT</h1>
+			<h2>un film de Abel FERRARA</h2>
+			<h3>EN SALLE LE 15 FEVRIER 2019</h3>
 		</div>
 	</div>
 	
-	<div class="section" id="section3" style="background-image: url(images/fond-jour-dapres.jpg);">
+	<div class="section" id="section3" style="background-image: url(images/fond-jour-dapres.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="intro">
-			<h1>Enjoy it</h1>
+			<span class="tag">PROCHAINEMENT	</span>
+			<h1>LE JOUR D’APRES</h1>
+			<h2>un film de Hong SANGSOO</h2>
+			<h3>EN DVD LE 30 FEVRIER 2019</h3>
 		</div>
 	</div>
 	
-	<div class="section" id="section4" style="">
+	<div class="section" id="section4">
 			
 			<video id="myVideo" loop muted data-autoplay> <!-- width="100%" height="100%" -->
 				<source src="movie.mp4" type="video/mp4">
@@ -109,10 +134,17 @@
 				Your browser does not support the video tag.
 			</video>
 		<div class="layer">
-			<h1>fullPage.js videos</h1>
+			<span class="tag">PROCHAINEMENT	</span>
+			<h1>LE JOUR D’APRES</h1>
+			<h2>un film de Hong SANGSOO</h2>
+			<h3>EN DVD LE 30 FEVRIER 2019</h3>
 		</div>
 
 	</div>	
+	
+	
+	
+
 	
 	
 </div>
