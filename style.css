@@ -102,7 +102,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	bottom: 10%;
 	right: 10%;
 	/*max-height: 466px;*/
-	max-width: 50%;
+	max-width: 20%;
 }
 
 /***************VIDEO*******************/
