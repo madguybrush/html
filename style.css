@@ -1,0 +1,114 @@
+
+
+*{
+	font-family: Montserrat, Verdana, sans-serif;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	/*font-size: 16px; */
+	font-size: 100%; 
+	/*background-color: rgba(239, 149, 5, 0.2);*/
+}
+
+
+@font-face {
+font-family: 'GeosansLight';
+font-style: normal;
+font-weight: normal;
+src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'GeosansLight-Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
+}
+
+/**menu****/
+
+.fondblanc{
+background-color: #fff!important;
+}
+
+.textenoir{
+color: #000!important;
+}
+
+.textenoir:hover{
+background-color: rgba(0,0,0,.7)!important;
+color: #fff!important;
+}
+.bordnoir{
+border: 1px solid #000!important;
+}
+
+.navbar{
+	
+	/*position: fixed;*/
+	/*top: 0;
+	left: 0;
+	
+	color: white;
+	z-index: 9999;
+	min-width: 200px;
+	height: 100%;
+	text-transform: uppercase;*/
+	
+	max-width: 317px; /*30%;*/
+	height: 100%;
+	/*background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));*/
+	background-color: rgba(0, 0, 0, 0.3) ;
+	padding: 0px; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	z-index: 1030;
+		transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+}
+
+
+.container{
+	flex-direction: column;
+	height: 100%;
+	
+
+}
+
+.navbar-brand{
+ margin-top: 80px; /*8%;*/
+}
+
+
+.navbar-collapse{
+	margin-right: 10px;
+	align-items: flex-start;
+
+	 margin-top: 10%; /*14%;*/
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 0.2em;
+	
+			
+}
+/*
+.navbar-light .navbar-nav .nav-link{
+	color: white;
+		letter-spacing: 1px;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+}*/
