@@ -9,6 +9,7 @@ html, body{
 	height: 100%;
 	/*font-size: 16px; */
 	font-size: 100%; 
+	font-weight: 400;
 	color: white;
 	/*background-color: rgba(239, 149, 5, 0.2);*/
 }
@@ -32,11 +33,9 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 
 
 .navbar{
-	
 	/*position: fixed;*/
 	/*top: 0;
 	left: 0;
-	
 	color: white;
 	z-index: 9999;
 	min-width: 200px;
@@ -52,13 +51,33 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	letter-spacing: 1px;
 	font-size: 14px;
 	z-index: 1030;
-		transition: all .3s ease-out;
+	transition: all .3s ease-out;
     -webkit-transition:all .3s ease-out;
     -o-transition:all .3s ease-out;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
 }
 
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	position: relative;
+	background-color: transparent;
+	font-size: 12px;
+	border: none;
+	top: 0;
+}
+
+.dropdown-item{
+	text-align: center;
+	color: #f6f6f6;
+	font-weight: 100;
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+	text-decoration: underline;
+	font-weight: 400;
+	background-color: transparent;
+	color: #fff;
+}
 
 .container{
 	flex-direction: column;
@@ -66,30 +85,6 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 
 }
 
-.flex-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	/*-ms-flex-wrap: wrap;
-	flex-wrap: wrap;*/
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items : center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	/*	flex-direction: row;*/
-}
-
-.flex-item{
-	
-}
-
-.fleximg{
-	margin-right: 10%;
-	margin-bottom: 10%;
-	 max-width: 80%;
-}
 
 .navbar-brand{
  margin-top: 80px; /*8%;*/
@@ -112,13 +107,24 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	color: white;
 	font-size: 1rem;
 	letter-spacing: 0.2em;
-	
+	text-align: center;
 			
 }
 
+.navbar-dark .navbar-nav .nav-link .active{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
 .intro{ /* , .layer*/
 	margin-left: 30%;
-	margin-bottom: 10%;
+	margin-bottom: 4%;
 }
 
 .imgfixed{
@@ -129,7 +135,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	max-width: 20%;
 }
 
-.tag{
+.tag{ /* PROCHAINEMENT */
 	color: #A78A3C;
 	font-weight: bold;
 	border: 2px solid #A78A3C;
@@ -140,9 +146,21 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	padding-bottom: .4em;
 }
 
+/*
+#fullPage h1{
+	color: blue;
+}*/
+
 .intro h1, .layer h1{
 	margin-top: 0.5em;
+	text-shadow: -2px 2px #040415;
 }
+
+.intro h2, .layer h2, .intro h3, .layer h3{
+
+	text-shadow: -2px 2px #040415;
+}
+
 
 .plusbutton{
 		color: white;
@@ -159,9 +177,91 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 		text-decoration: none;
 }
 
+
+.flex-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/*-ms-flex-wrap: wrap;
+	flex-wrap: wrap;*/
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items : center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	/*	flex-direction: row;*/
+}
+
+
+.fleximg{
+	margin-right: 10%;
+	margin-bottom: 10%;
+	 max-width: 80%;
+}
+
+#menuBas{
+	text-align: center;
+	margin: auto;
+		margin-bottom: 10%;
+}
+
+.menubas{
+	/*text-align: center;*/
+	color: #f6f6f6;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+
+}
+
+.menubas:hover, .menubas.active {
+	text-decoration: underline;
+	font-weight: 400;
+	background-color: transparent;
+	color: #fff;
+}
+
+.searchform{
+	max-width: 100%;
+}
+
+
+.form-control{
+	width: 80%;
+	margin-right: 3%;
+}
+
+.btnsearch{
+	width: 12%;
+	background-color: transparent;
+}
+
 .searchbutton{
 	width: 25px;
-	color: white;
+}
+
+
+
+.loupe {
+  fill: #fff; 
+}
+
+.socialbutton {
+  fill: #111; 
+  opacity: 0.5;
+}
+
+.socialbuttons{
+	width: 20px;
+	height: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	/*background-color: white;*/
+	
+}
+
+.social{
+	font-size: 28px;
 }
 
 /***************VIDEO*******************/
@@ -176,11 +276,11 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 		height: 100%;
 		background-size: 100% 100%;
  		background-color: black; /* in case the video doesn't fit the whole page*/
-  		background-image: /* our video */;
+  		/*background-image: url(images/fond-BadLieutenant.jpg);  */
   		background-position: center center;
   		background-size: contain;
    		object-fit: cover; /*cover video background */
-   		z-index:3;
+   		z-index: -1; /*3;*/
 	}
 	
 	

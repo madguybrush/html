@@ -36,27 +36,81 @@
 				<!-- The WordPress Menu goes here -->
 				<div id="navbarNavDropdown" class="collapse navbar-collapse">
 					<ul id="main-menu" class="navbar-nav flex-column ml-auto">
-						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8 nav-item"><a title="films" href="" class="nav-link">Films</a></li>
-						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9 nav-item"><a title="livres" href="" class="nav-link">Livres</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8 nav-item"><a title="films" href="" class="nav-link">Films</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9 nav-item"><a title="livres" href="" class="nav-link">Livres</a></li>
 						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10 nav-item"><a title="agenda" href="" class="nav-link">Agenda</a></li>
 						<!--<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item"><a title="Panier" href="http://testcapricci.fr/panier/" class="nav-link">Panier</a></li>-->
-						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-12 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
 							<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="DVD" href="http://testcapricci.fr/categorie-produit/dvd/" class="dropdown-item">DVD</a></li>
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Livres" href="http://testcapricci.fr/categorie-produit/livres/" class="dropdown-item">Livres</a></li>
 							</ul>
 						</li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a title="capricci" href="" class="nav-link">Capricci</a></li>
 					</ul>
 				</div>	
 				
-<!-- check dans wordpress caode widget recherche aub/vprod/bprod -->
-				<a href="" class="searchbutton">
 				
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-				<path d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
-				</svg>
+				<div id="menuBas">
 				
-				</a>
+					<div>
+						<a href="https://capricci-international.com" alt="" class="menubas" >INTERNATIONAL SALES</a>
+					</div>
+					
+					<!-- check dans wordpress code widget recherche aub/vprod/bprod -->
+					
+					<div class="searchform">
+					    <form class="flex-container" role="search" method="get" action="">  <!--  my-lg-0 margin-left --> <!-- < ?php echo esc_url( home_url( '/' ) ); ?> -->
+							<input class="form-control" type="search" placeholder="Rechercher" name="s" aria-label="Search">  
+							<button class="btn btnsearch" type="submit" id="searchsubmit">  <!-- btn-outline-success  --><!-- my-2 my-sm-0 -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+								<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+							</svg>
+							<!--<i class="fa fa-search"></i>-->
+							</button>
+						</form>
+						</div>
+						
+						<!--
+						<form method="get" id="searchform" action="http://testcapricci.fr/" role="search">
+							<label class="sr-only" for="s">Rechercher</label>
+							<div class="input-group">
+								<input class="field form-control" id="s" name="s" type="text" placeholder="Recherche …" value="">
+								<span class="input-group-append">
+									<input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit" value="Rechercher">
+								</span>
+							</div>
+						</form>-->
+						
+						<!--<a href="" alt="">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+								<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+							</svg>
+						</a>-->
+					
+					<div>
+					<!--<i class=" fab fa-facebook-f"></i>
+					<i class=" fab fa-twitter"></i>-->
+					
+					<i class="social fab fa-facebook-square"></i>
+					<i class="social fab fa-twitter-square"></i>
+					
+					<!--<a href="" target="_blank">
+					  <svg viewBox="0 0 8 16" role="img" aria-labelledby="follow_fb"  class="socialbuttons">
+						<title id="follow_fb">Follow Criterion Collection on Facebook</title>
+						<path class="socialbutton" d="M4.964 16V8h2.21l.292-2.758H4.964l.004-1.38c0-.72.068-1.105 1.1-1.105H7.45V0H5.24C2.59 0 1.655 1.338 1.655 3.587v1.655H0V8h1.654v8h3.31z" fill="#979797" fill-rule="evenodd"></path>
+					  </svg>
+					</a>
+					<a href="" target="_blank">
+					  <svg viewBox="0 0 16 14" role="img" aria-labelledby="follow_tw"  class="socialbuttons">
+						<title id="follow_tw">Follow Criterion Collection on Twitter</title>
+						<path class="socialbutton" d="M7.77 4.295l.034.572-.578-.07c-2.105-.27-3.943-1.18-5.503-2.708L.96 1.33l-.197.56C.347 3.14.613 4.46 1.48 5.346c.462.49.358.56-.44.27-.277-.094-.52-.164-.543-.13-.08.082.197 1.144.416 1.565.3.583.914 1.155 1.584 1.493l.567.27-.67.01c-.648 0-.67.012-.602.257.23.76 1.144 1.564 2.162 1.914l.717.246-.624.373c-.925.537-2.01.84-3.098.864-.52.01-.948.058-.948.093 0 .117 1.41.77 2.23 1.027 2.464.76 5.39.432 7.585-.863 1.56-.923 3.122-2.755 3.85-4.53.393-.944.786-2.672.786-3.5 0-.537.036-.607.683-1.25.382-.373.74-.78.81-.898.115-.222.104-.222-.486-.023-.983.35-1.122.303-.636-.222.36-.373.787-1.05.787-1.248 0-.035-.173.023-.37.128-.208.117-.67.292-1.017.397l-.624.2-.567-.386c-.313-.21-.752-.443-.984-.513-.59-.163-1.49-.14-2.023.047-1.445.525-2.358 1.88-2.254 3.36z" fill="#979797" fill-rule="evenodd"></path>
+					  </svg>
+					</a>-->
+				  
+					</div>
+				
+				</div>
 				
 			</div>
 			<!-- .container -->
@@ -87,8 +141,7 @@
 		<img class="imgfixed" alt="logo Capricci" src="images/PremiereCollection-Jaquette-3D-HUPPERT.png">
 	</div>-->
 	
-	<div class="section" id="section1" style="background-image: url(images/fond-LIVRE-HUPPERT.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
-		
+	<div class="section" id="section1" style="background-image: url(images/fond-LIVRE-HUPPERT.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">	
 	
 			<div class="flex-container">
 	
@@ -104,7 +157,6 @@
 				</div>
 	
 			</div>	
-	
 	</div>
 	
 	<div class="section" id="section2" style="background-image: url(images/fond-BadLieutenant.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -133,6 +185,7 @@
 				<source src="movie.ogg" type="video/ogg">
 				Your browser does not support the video tag.
 			</video>
+			
 		<div class="layer">
 			<span class="tag">PROCHAINEMENT	</span>
 			<h1>LE JOUR D’APRES</h1>
