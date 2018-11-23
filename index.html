@@ -16,7 +16,92 @@
 <body>
 
 
-<nav class="navbar fixed-top navbar-expand-md navbar-dark">
+
+<!-- menu mobile -->
+
+<nav class="navbar fixed-top menumobile navbar-dark">
+
+<div class="container">
+
+
+				<a class="navbar-brand" rel="home" href="http://testcapricci.fr/" title="Capricci" alt="Capricci" itemprop="url">
+					<img alt="logo Capricci" src="images/Logomobile.png">
+				</a>
+				
+				
+				<div class="flexbuttons">
+				<button class="btn btnsearch" >  <!--type="submit" id="searchsubmit">   my-2 my-sm-0 -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+						<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+					</svg>
+					<!--<i class="fa fa-search"></i>-->
+				</button>
+				
+				<button id="btnmenumobile" class="btn" type="button" > <!-- navbar-toggler-->
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+				</button>
+				
+				<!--
+				<button id="btnmenumobile" class="btn" type="button" > 
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="menubutton">
+						<path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'></path>
+					</svg>
+
+				</button>-->
+				
+				<!--<button id="closemenumobile" class="btn" type="button" > 
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="menubutton">
+						<path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'></path>
+					</svg>
+
+				</button>-->
+				
+				</div>
+				
+		
+
+
+</div>
+
+
+</nav>
+				
+<nav class="navbar navbar-dark" id="modalmobile">
+
+<div class="container">
+
+				<div id="navbarNavDropdown" class="sidebar">
+					<ul id="main-menu" class="navbar-nav flex-column ml-auto">
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8 nav-item"><a title="films" href="" class="nav-link">Films</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9 nav-item"><a title="livres" href="" class="nav-link">Livres</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10 nav-item"><a title="agenda" href="" class="nav-link">Agenda</a></li>
+						<!--<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item"><a title="Panier" href="http://testcapricci.fr/panier/" class="nav-link">Panier</a></li>-->
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
+							<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="DVD" href="http://testcapricci.fr/categorie-produit/dvd/" class="dropdown-item">DVD</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Livres" href="http://testcapricci.fr/categorie-produit/livres/" class="dropdown-item">Livres</a></li>
+							</ul>
+						</li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a title="capricci" href="" class="nav-link">Capricci</a></li>
+					</ul>
+				</div>	
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+
+<nav class="navbar fixed-top navbar-expand-md navbar-dark menudesktop">
+
+
 
 			<div class="container">
 		
@@ -28,9 +113,11 @@
 
 					<!-- end custom logo -->
 
+					
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+				
 				
 
 				<!-- The WordPress Menu goes here -->
@@ -51,7 +138,7 @@
 				</div>	
 				
 				
-				<div id="menuBas">
+				<div id="menuBas" >
 				
 					<div class="international">
 						<a href="https://capricci-international.com" alt=""  >INTERNATIONAL SALES</a>
@@ -205,6 +292,12 @@
   </div>
 
 -->
+
+
+
+
+
+
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
@@ -227,6 +320,99 @@
    //     init_site();
    //     this.slider = new HomeSlider();        
    // });
+   
+( function( $ )
+{
+var modalState;
+
+modalState = 0;
+
+/*
+var window_width;
+	var window_height;
+	
+	
+
+window_width = $( window ).width();
+		window_height = $( window ).height();*/
+		
+	
+function hidemenumobile(){
+	
+	//$( ".sidebar" ).slideUp( 1000 ).delay( 800 ); 
+		$( '#modalmobile' ).hide();
+		$( '.sidebar' ).removeClass("on");
+		$( '#modalmobile' ).css( 'opacity', '0' );
+		$( '.navbar-brand' ).css( 'opacity', '1' );
+		modalState = 0;
+		console.log(modalState);
+		}
+		
+function displaymenumobile(){
+		
+		$( '#modalmobile' ).show();
+		//$( '#modalmobile' ).addClass("is-on");
+		$( '.sidebar' ).addClass("on");
+		$( ".sidebar" ).slideDown( 1000 ); 
+		//.delay( 800 ).fadeIn( 800 );
+		//$( ".sidebar" ).delay( 800 ).fadeIn( 800 );
+		$( '#modalmobile' ).css( 'opacity', '1' );
+		$( '.navbar-brand' ).css( 'opacity', '0' );
+		modalState = 1;
+		console.log(modalState);
+		
+		
+		/*if( window_width <= 1300 ){ 
+			if( $( '#project-infos-text' ).hasClass( 'open' ) ){
+				$( '#project-infos-text' ).css( 'top', (window_height-$( '#project-infos-text>span' ).outerHeight() - 72 ) + 'px' );
+			}else{
+				$( '#project-infos-text' ).css( 'top', window_height + 'px' );
+			}
+		}else{
+			$( '#project-infos-text' ).css( 'top', '' );
+			$( '#project-infos-text' ).css( 'opacity', '1' );
+			$( '#project-infos' ).removeClass( 'open' );
+			$( '#project-infos-text' ).removeClass( 'open' );
+		}*/
+		
+		//alert("lol");
+
+	}
+	
+	/*
+	function animateButton(x) {
+    x.classList.toggle("change");
+}
+*/
+
+	function linestocross() {
+	$( '#btnmenumobile' ).addClass("change");
+	}
+	
+		function crosstolines() {
+	$( '#btnmenumobile' ).removeClass("change");
+	}
+	
+	
+	
+	$( document ).ready( function() {
+	
+		$( '#btnmenumobile' ).click( function(e){
+			if (modalState === 0){
+				displaymenumobile();
+				linestocross();
+			}
+			else{
+				hidemenumobile();
+				crosstolines();
+			}
+	} );
+	
+
+	
+});
+
+   } )( jQuery );
 </script>
 
 	
