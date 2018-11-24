@@ -175,6 +175,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 .plusbutton:hover{
 		color: white;
 		text-decoration: none;
+		text-decoration: none;
 }
 
 
@@ -368,10 +369,28 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	position: fixed;
 	top: 0;
 	left: 0;
+	padding-top: 20%;
+	padding-bottom: 5%;
 	background: #000;
 	z-index: 50000;
 	transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 }
+
+#modalsearch{
+	display:none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 20%;
+	padding-bottom: 5%;
+	background: #000;
+	z-index: 50000;
+	transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
+}
+
 /*
 #modalmobile .is-on{
 	opacity: 1;
@@ -386,24 +405,18 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 
 #modalmobile .sidebar{
 	opacity: 0;
-transform: scale(1.1);
-transform: translateX(100%);
+/*transform: scale(1.1);*/
+/*transform: translateX(100%);*/
 	transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 }
 
 #modalmobile .sidebar.on{
 	
 	opacity: 1;
-	transform: translateZ(0);
+	/*transform: translateZ(0);*/
 transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 }
 
-#modalmobile .container{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
 
 
 	.bar1 {   
@@ -438,9 +451,12 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 }
 
 
-
-
+.cross1, .cross2{
+	display: none;
+	fill: #fff; 
+}
 	
+
 	/**************************responsive***********************/
 	
 	
@@ -474,6 +490,44 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	height: auto;
 	max-width: 100%;
 }
+
+
+#modalmobile .container{
+	display:flex;
+	justify-content: space-between; /*center*/
+	align-items: center;
+	height: 100%;
+	flex-direction: column;
+	/*margin-top: 10%;
+	margin-bottom: 5%;*/
+}
+
+#modalsearch .container{
+	display:flex;
+	justify-content: space-between; /*center*/
+	align-items: center;
+	height: 100%;
+	flex-direction: column;
+	/*margin-top: 10%;
+	margin-bottom: 5%;*/
+}
+
+#modalmobile .international{
+	margin-bottom: 3%;
+}
+
+.menuBasmobile{
+	text-align: center;
+	
+	/*margin: auto;
+	margin-bottom: 15%;
+	width: 90%;*/
+}
+
+#modalsearch .searchform{
+	width: 100%;
+}
+
 
 .navbar-dark .navbar-toggler{
 	border: none;
