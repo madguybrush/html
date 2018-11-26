@@ -25,7 +25,7 @@
 
 
 				<a id="brandmobile" class="navbar-brand" rel="home" href="http://testcapricci.fr/" title="Capricci" alt="Capricci" itemprop="url">
-					<img alt="logo Capricci" src="images/Logomobile.png">
+					<img alt="logo Capricci" src="images/logomobile.png">
 				</a>
 				
 				
@@ -286,8 +286,9 @@
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 
-	<script type="text/javascript" src="js/fullPage.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
 	<script type="text/javascript" src="https://northridgechurch.com/am-site/themes/NorthRidge/js/build/site.min.js?v=1520531714"></script>
+	<script type='text/javascript' src='js/script.js'></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
@@ -300,178 +301,6 @@
     });
 </script>
 
-<script>
-
-( function( $ )
-{
-var modalState;
-var lineState;
-modalState = 0; // 0 = closed, 1 = menu opened, 2 = search opened
-lineState = "lines";
-
-/*
-var window_width;
-	var window_height;
-
-window_width = $( window ).width();
-		window_height = $( window ).height();*/
-		/*if( window_width <= 1300 ){ 
-			if( $( '#project-infos-text' ).hasClass( 'open' ) ){
-				$( '#project-infos-text' ).css( 'top', (window_height-$( '#project-infos-text>span' ).outerHeight() - 72 ) + 'px' );
-			}else{
-				$( '#project-infos-text' ).css( 'top', window_height + 'px' );
-			}
-		}else{
-			$( '#project-infos-text' ).css( 'top', '' );
-			$( '#project-infos-text' ).css( 'opacity', '1' );
-			$( '#project-infos' ).removeClass( 'open' );
-			$( '#project-infos-text' ).removeClass( 'open' );
-		}*/
-		
-		
-	
-function hidemenumobile(){
-	
-	//$( ".sidebar" ).slideUp( 1000 ).delay( 800 ); 
-		$( '#modalmobile' ).hide();
-		$( '.sidebar' ).removeClass("on");
-		//$( ".sidebar" ).addClass("slideInUp"); 
-		$( '#modalmobile' ).css( 'opacity', '0' );
-		$( '#brandmobile' ).css( 'opacity', '1' );
-		modalState = 0;
-		//console.log(modalState);
-		}
-		
-function displaymenumobile(){
-		
-		$( '#modalmobile' ).show();
-		//$( "#modalmobile" ).addClass("slideInDown"); 
-		//$( '#modalmobile' ).addClass("is-on");
-		$( '.sidebar' ).addClass("on");
-		//$( ".sidebar" ).slideDown( 1000 ); 
-		$( ".sidebar" ).addClass("slideInDown"); 
-		$( ".menuBasmobile" ).addClass("slideInUp"); 
-		//.delay( 800 ).fadeIn( 800 );
-		//$( ".sidebar" ).delay( 800 ).fadeIn( 800 );
-		$( '#modalmobile' ).css( 'opacity', '1' );
-		$( '#brandmobile' ).css( 'opacity', '0' );
-		modalState = 1;
-		//console.log(modalState);
-		
-
-	}
-
-
-	function linestocross() {
-	$( '#btnmenumobile' ).addClass("change");
-	lineState = "cross";
-	}
-	
-	function crosstolines() {
-	$( '#btnmenumobile' ).removeClass("change");
-	lineState = "lines";
-	}
-	
-	function loupetocross(){
-		$( '.loupe' ).hide();
-		/*$( '.searchbutton' ).hide();*/
-		$( '.cross1' ).show();
-		$( '.cross2' ).show();
-	}
-	
-		function crosstoloupe(){
-		$( '.loupe' ).show();
-		$( '.cross1' ).hide();
-		$( '.cross2' ).hide();
-	}
-	
-	function hidesearchmobile(){
-	
-
-		$( '#modalsearch' ).hide();
-		$( '.sidebar' ).removeClass("on");
-		$( '#modalsearch' ).css( 'opacity', '0' );
-		$( '#brandmobile' ).css( 'opacity', '1' );
-		modalState = 0;
-		}
-		
-		
-	function switchfrommodaltosearch(){
-	
-	hidemenumobile();
-	displaysearchmobile();
-	crosstolines();
-		
-		}
-		
-		
-function displaysearchmobile(){
-		console.log(modalState);
-		$( '#modalsearch' ).show();
-		$( '#modalsearch' ).css( 'opacity', '1' );
-		$( '#brandmobile' ).css( 'opacity', '0' );
-		modalState = 2;
-		console.log(modalState);
-	}
-	
-	
-	$( document ).ready( function() {
-	
-	
-	console.log(modalState);
-	
-		$( '#btnmenumobile' ).click( function(e){
-			if (modalState === 0){
-				displaymenumobile();
-				linestocross();
-			}
-			else if (modalState === 1){
-				hidemenumobile();
-				crosstolines();
-			}
-			else{ // 2
-				if (lineState === "cross"){
-				hidesearchmobile();
-				crosstolines();
-				console.log("cross");
-				}
-				else{
-				
-				hidesearchmobile();
-				displaymenumobile();
-				linestocross();
-				crosstoloupe();
-				console.log("lines");
-				}
-			}
-	} );
-	
-		$( '#btnmenusearch' ).click( function(e){
-			if (modalState === 0){
-				displaysearchmobile();
-				loupetocross();
-				console.log("lol");
-			}
-			else if (modalState === 1){
-			switchfrommodaltosearch();
-			loupetocross();
-			console.log("loli");
-			}
-			else{ // 2
-				hidesearchmobile();
-				if (lineState === "cross"){ crosstolines(); }
-				//else { linestocross(); }
-				crosstoloupe();
-				console.log("lolilol");
-			}
-	} );
-	
-	
-	
-});
-
-   } )( jQuery );
-</script>
 
 	
 
