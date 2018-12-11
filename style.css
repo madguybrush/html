@@ -42,7 +42,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	height: 100%;
 	text-transform: uppercase;*/
 	
-	max-width: 25%; /*317px;*/
+	max-width: 17%; /*25%; 317px;*/
 	height: 100%;
 	/*background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));*/
 	background-color: rgba(0, 0, 0, 0.3) ;
@@ -134,7 +134,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 
 
 .intro{ /* , .layer*/
-	margin-left: 30%;
+	margin-left: 20%;
 	margin-bottom: 4%;
 }
 
@@ -165,6 +165,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 .intro h1, .layer h1{
 	margin-top: 0.5em;
 	text-shadow: -2px 2px #040415;
+	text-transform: uppercase;
 }
 
 .intro h2, .layer h2, .intro h3, .layer h3{
