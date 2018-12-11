@@ -14,33 +14,17 @@ html, body{
 	/*background-color: rgba(239, 149, 5, 0.2);*/
 }
 
-/*
+
 @font-face {
-font-family: 'GeosansLight';
+font-family: Piek;
+src: url('fonts/Piek-Reg.otf');
 font-style: normal;
 font-weight: normal;
-src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
 }
 
 
-@font-face {
-font-family: 'GeosansLight-Oblique';
-font-style: normal;
-font-weight: normal;
-src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
-}*/
-
-
-
 .navbar{
-	/*position: fixed;*/
-	/*top: 0;
-	left: 0;
-	color: white;
-	z-index: 9999;
-	min-width: 200px;
-	height: 100%;
-	text-transform: uppercase;*/
+
 	
 	max-width: 17%; /*25%; 317px;*/
 	height: 100%;
@@ -95,7 +79,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 
 .navbar-brand{
  margin-top: 15%;/* 80px; */
- 
+ margin-right: 0;
  /*8%;*/
 }
 
@@ -103,14 +87,15 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
  max-width: 100%;
 }
 
-
+/*
 .navbar-collapse{
 	margin-right: 10px;
 	align-items: flex-start;
+	 margin-top: 20%; 
+}*/
 
+#navbarNavDropdown{
 	 margin-top: 20%; /* 10%; */
-	 
-	 /*14%;*/
 }
 
 
@@ -122,15 +107,53 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 			
 }
 
+
+
 .navbar-dark .navbar-nav .nav-link .active{
 	font-weight: bold;
 	text-decoration: underline;
 }
+/*
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: white;
 	font-weight: bold;
 	text-decoration: underline;
+}*/
+
+
+.sousmenu {
+	margin-bottom: 15%;
 }
+
+.sousmenu a{
+	color: #fff;
+	opacity: 0.8;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+}
+
+.sousmenu .navbar-nav .nav-link{
+	color: white;
+	font-size: 0.8rem;
+	letter-spacing: 0.2em;
+	text-align: center;
+			
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	text-decoration: underline;
+	/*font-weight: 200;*/
+	background-color: transparent;
+	color: #fff;
+}
+
+
+.sousmenu a.active {
+	
+}
+
+
+
 
 
 .intro{ /* , .layer*/
@@ -157,12 +180,9 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	padding-bottom: .4em;
 }
 
-/*
-#fullPage h1{
-	color: blue;
-}*/
 
 .intro h1, .layer h1{
+	font-family: Piek, Montserrat, Arial;
 	margin-top: 0.5em;
 	text-shadow: -2px 2px #040415;
 	text-transform: uppercase;
@@ -213,6 +233,10 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	 max-width: 80%;
 }
 
+.menus{
+		text-align: center;
+}
+
 #menuBas{
 	text-align: center;
 	/*margin: auto;*/
@@ -220,24 +244,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	width: 90%;
 }
 
-.international {
-	margin-bottom: 15%;
-}
 
-.international a{
-	/*text-align: center;*/
-	color: #f6f6f6;
-	font-weight: 100;
-	letter-spacing: 0.2em;
-
-}
-
-.international a:hover, .international a.active {
-	text-decoration: underline;
-	font-weight: 400;
-	background-color: transparent;
-	color: #fff;
-}
 
 .searchform{
 	max-width: 100%;
@@ -297,6 +304,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 .social{
 	font-size: 28px;
 }
+
 
 /***************VIDEO*******************/
 
@@ -381,7 +389,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding-top: 20%;
+	padding-top: 0;/*20%;*/
 	padding-bottom: 5%;
 	background: #000;
 	z-index: 50000;
@@ -396,7 +404,7 @@ src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('wof
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding-top: 20%;
+	padding-top: 20%;/*20%;*/
 	padding-bottom: 5%;
 	background: #000;
 	z-index: 50000;
@@ -524,7 +532,7 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	margin-bottom: 5%;*/
 }
 
-#modalmobile .international{
+#modalmobile .sousmenu{
 	margin-bottom: 3%;
 }
 
@@ -609,25 +617,5 @@ h3 {
 	width: 30px;
 }
 
-/*	
-.navbar{
-	max-width: 100%;
-	height: auto;
 
-}
-
-.container{
-	flex-direction: row;
-	height: auto;
-}
-
-
-
-.navbar-dark .navbar-toggler{
-	border: none;
-}
-
-	
-
-	*/
 	}
