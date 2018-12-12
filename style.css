@@ -40,6 +40,11 @@ font-weight: normal;
     -o-transition:all .3s ease-out;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
+
+  animation-duration: 1s;
+  /*animation-delay: 2s;*/
+ /* animation-iteration-count: infinite;*/
+
 }
 
 .navbar-expand-md .navbar-nav .dropdown-menu{
@@ -55,20 +60,17 @@ font-weight: normal;
 		font-size: 12px;
 }
 
-.dropdown-item{
-	text-align: center;
-	color: #f6f6f6;
-	font-weight: 100;
-	white-space: normal;
-	padding: .25rem .5rem
-}
 
-.dropdown-item:hover, .dropdown-item.active {
-	text-decoration: underline;
-	font-weight: 400;
-	background-color: transparent;
-	color: #fff;
+
+
+
+.dropdown-toggle::after{
+	display: none;
 }
+/*
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
+}*/
 
 .container{
 	flex-direction: column;
@@ -80,6 +82,8 @@ font-weight: normal;
 .navbar-brand{
  margin-top: 15%;/* 80px; */
  margin-right: 0;
+   animation-duration: 1.5s;
+  /*animation-delay: 0.5s;*/
  /*8%;*/
 }
 
@@ -95,23 +99,37 @@ font-weight: normal;
 }*/
 
 #navbarNavDropdown{
-	 margin-top: 20%; /* 10%; */
+	 margin-top: 20%; /* 10%; */   
+	 animation-duration: 2s;
+
+  /*animation-delay: 0.5s;*/
 }
 
 
 .navbar-dark .navbar-nav .nav-link{
 	color: white;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	letter-spacing: 0.2em;
+	padding: 0;
+	margin: .5rem 1rem;
 	text-align: center;
-			
+	background-image:url("img/underline.png");
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size:0 9px;
+    -webkit-transition:background-size .2s ease-out;
+    -moz-transition:background-size .2s ease-out;
+    -ms-transition:background-size .2s ease-out;
+    -o-transition:background-size .2s ease-out;
+    transition:background-size .2s ease-out
 }
 
 
 
 .navbar-dark .navbar-nav .nav-link .active{
 	font-weight: bold;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	    background-size: 100px 9px;/*100%*/
 }
 /*
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -120,9 +138,41 @@ font-weight: normal;
 	text-decoration: underline;
 }*/
 
+.dropdown-item{
+	text-align: center;
+		color: #fff;
+	opacity: 0.8;
+	font-weight: 100;
+		padding: 0;
+		margin: 0;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	white-space: normal;
+	letter-spacing: 0.2em;
+	/*padding: .25rem .5rem*/
+		background-image:url("img/underline.png");
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    background-size:0 9px;
+    -webkit-transition:background-size .2s ease-out;
+    -moz-transition:background-size .2s ease-out;
+    -ms-transition:background-size .2s ease-out;
+    -o-transition:background-size .2s ease-out;
+    transition:background-size .2s ease-out
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+	/*text-decoration: underline;*/
+	font-weight: 100;
+	background-color: transparent;
+	 background-size: 100px 9px;
+	 color: white;
+}
+
 
 .sousmenu {
 	margin-bottom: 15%;
+	 animation-duration: 2.5s;
 }
 
 .sousmenu a{
@@ -141,10 +191,12 @@ font-weight: normal;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	/*font-weight: 200;*/
 	background-color: transparent;
 	color: #fff;
+	background-size: 100px 9px;/*100%*/
+	
 }
 
 
@@ -186,21 +238,38 @@ font-weight: normal;
 	margin-top: 0.5em;
 	text-shadow: -2px 2px #040415;
 	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 0.07em;
+	margin-bottom: 0.25rem;
 }
 
-.intro h2, .layer h2, .intro h3, .layer h3{
+.intro h2, .layer h2{
 
 	text-shadow: -2px 2px #040415;
+		font-size: 1rem;
+	letter-spacing: 0.07em;
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
 }
+
+.intro h3, .layer h3{
+	text-transform: uppercase;
+	text-shadow: -2px 2px #040415;
+		font-size: 1.25rem;
+	letter-spacing: 0.07em;
+	margin-bottom: 1rem;
+}
+
 
 
 .plusbutton{
 		color: white;
 		font-size: 2em;
-		border: 2px solid #fff;
-		width: 60px;
-		height: 60px;
-		border-radius: 60px;
+		/*border: 2px solid #fff;*/
+		width: 40px;
+		height: 40px;
+		/*border-radius: 60px;*/
 		font-weight: 200;
 }
 
@@ -208,6 +277,16 @@ font-weight: normal;
 		color: white;
 		text-decoration: none;
 		text-decoration: none;
+}
+
+.socialbutton{
+		color: white;
+		font-size: 2em;
+		/*border: 2px solid #fff;*/
+		width: 25px;
+		height: 25px;
+		/*border-radius: 60px;*/
+		font-weight: 200;
 }
 
 
@@ -242,6 +321,7 @@ font-weight: normal;
 	/*margin: auto;*/
 	margin-bottom: 15%;
 	width: 90%;
+	animation-duration: 3s;
 }
 
 
@@ -249,6 +329,7 @@ font-weight: normal;
 .searchform{
 	max-width: 100%;
 	margin-bottom: 8%;
+	font-size: 2.5rem;
 }
 
 
@@ -286,20 +367,20 @@ font-weight: normal;
 .loupe {
   fill: #fff; 
 }
-
+/*
 .socialbutton {
   fill: #111; 
   opacity: 0.5;
-}
+}*/
 
+/*
 .socialbuttons{
 	width: 20px;
 	height: 20px;
 	border: 2px solid white;
 	border-radius: 10px;
-	/*background-color: white;*/
 	
-}
+}*/
 
 .social{
 	font-size: 28px;
@@ -333,7 +414,7 @@ font-weight: normal;
 		z-index: 4;
 		width: 100%;
 		bottom: 10%;
-		left: 30%;
+		left: 20%;
 		/*left: 0;
 		top: 43%;*/
 
@@ -389,7 +470,7 @@ font-weight: normal;
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding-top: 0;/*20%;*/
+	padding-top: 10%;/*20%;*/
 	padding-bottom: 5%;
 	background: #000;
 	z-index: 50000;
@@ -482,6 +563,29 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	
 	
 @media (max-width:767.98px){
+	
+	    #wpadminbar{
+        display:none;
+    }
+	/*html{margin-top:0!important;}*/
+	
+	html, body{
+	font-size: 70%; 
+	}
+	
+/*	h1 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 0.75rem;
+}*/
 		
 	.menudesktop{
 		display: none;
@@ -510,10 +614,23 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	height: auto;
 	max-width: 100%;
 }
+/*
+#modalmobile {
+	font-size: 100%;
+}*/
 
+.navbar-dark .navbar-nav .nav-link{
+	font-size: 2rem;
+}
+.socialbutton{
+	width : 30px;
+height : 30px;
+margin: 5px;
+	}
 
 #modalmobile .container{
 	display:flex;
+
 	justify-content: space-between; /*center*/
 	align-items: center;
 	height: 100%;
@@ -598,19 +715,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 	font-size: 0.5rem;
 }
 
-h1 {
-	font-size: 1.5rem;
-	margin-bottom: 0;
-}
 
-h2 {
-	font-size: 1rem;
-	margin-bottom: 1rem;
-}
-
-h3 {
-	font-size: 0.75rem;
-}
 
 
 .menubutton{

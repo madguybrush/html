@@ -21,6 +21,7 @@ function hidemenumobile(){
 		//$( ".sidebar" ).addClass("slideInUp"); 
 		$( '#modalmobile' ).css( 'opacity', '0' );
 		$( '#brandmobile' ).css( 'opacity', '1' );
+		$( '.menumobile' ).css( 'background-color', 'rgba(0, 0, 0, 0.3)' );
 		modalState = 0;
 		//console.log(modalState);
 		}
@@ -38,6 +39,7 @@ function displaymenumobile(){
 		//$( ".sidebar" ).delay( 800 ).fadeIn( 800 );
 		$( '#modalmobile' ).css( 'opacity', '1' );
 		$( '#brandmobile' ).css( 'opacity', '0' );
+		$( '.menumobile' ).css( 'background-color', 'transparent' );
 		modalState = 1;
 		//console.log(modalState);
 		
