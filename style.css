@@ -23,6 +23,7 @@ font-weight: normal;
 }
 
 
+
 .navbar{
 
 	
@@ -41,11 +42,19 @@ font-weight: normal;
     -moz-transition:all .3s ease-out;
     -ms-transition:all .3s ease-out;
 
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   /*animation-delay: 2s;*/
  /* animation-iteration-count: infinite;*/
 
 }
+
+#menuHaut{
+
+width: 100%
+	
+}
+
+
 
 .navbar-expand-md .navbar-nav .dropdown-menu{
 	position: relative;
@@ -53,13 +62,56 @@ font-weight: normal;
 	font-size: 12px;
 	border: none;
 	top: 0;
+padding: 0;
+	/*display: block;
+	opacity: 0;
+	padding: 0;
+	height: 0px;
+		transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;*/
+	   -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.dropdown-menu{
-	background-color: transparent;
-		font-size: 12px;
-}
+.navbar-expand-md .navbar-nav .dropdown-menu.show{
+    -webkit-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -moz-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -ms-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -o-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    transition: max-height 0.5s, opacity 0.2s, visibility 0s;
 
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+
+	/*height: 100%;*/
+}
+/*
+.dropdown .dropdown-menu {
+    -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}*/
 
 
 
@@ -82,7 +134,7 @@ font-weight: normal;
 .navbar-brand{
  margin-top: 15%;/* 80px; */
  margin-right: 0;
-   animation-duration: 1.5s;
+   animation-duration: 1s;
   /*animation-delay: 0.5s;*/
  /*8%;*/
 }
@@ -100,7 +152,7 @@ font-weight: normal;
 
 #navbarNavDropdown{
 	 margin-top: 20%; /* 10%; */   
-	 animation-duration: 2s;
+	 animation-duration: 1.5s;
 
   /*animation-delay: 0.5s;*/
 }
@@ -172,7 +224,7 @@ font-weight: normal;
 
 .sousmenu {
 	margin-bottom: 15%;
-	 animation-duration: 2.5s;
+	 animation-duration: 2s;
 }
 
 .sousmenu a{
@@ -210,7 +262,7 @@ font-weight: normal;
 
 .intro{ /* , .layer*/
 	margin-left: 20%;
-	margin-bottom: 4%;
+	/*margin-bottom: 4%;*/
 }
 
 .imgfixed{
@@ -294,6 +346,7 @@ font-weight: normal;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	/*margin-bottom: 2rem;*/
 	/*-ms-flex-wrap: wrap;
 	flex-wrap: wrap;*/
 	-webkit-box-align: center;
@@ -305,10 +358,15 @@ font-weight: normal;
 	/*	flex-direction: row;*/
 }
 
+.section .flex-container{
+	align-items : flex-end;
+	margin-bottom: 55px;
+}
+
 
 .fleximg{
 	margin-right: 10%;
-	margin-bottom: 10%;
+	/*margin-bottom: 10%;*/
 	 max-width: 80%;
 }
 
@@ -319,19 +377,36 @@ font-weight: normal;
 #menuBas{
 	text-align: center;
 	/*margin: auto;*/
-	margin-bottom: 15%;
+	margin-bottom: 20px;
 	width: 90%;
-	animation-duration: 3s;
+	animation-duration: 2.5s;
 }
 
 
 
 .searchform{
 	max-width: 100%;
-	margin-bottom: 8%;
+	/*margin-bottom: 8%;*/
+	margin-bottom: 10px;
 	font-size: 2.5rem;
 }
 
+.form-control::placeholder{
+    color: #fff;
+	font-weight: 200;
+	font-size: 0.8rem;
+    opacity: 0.55; }
+  .form-control::-webkit-input-placeholder{
+    color: #fff;
+    opacity: 0.55; }
+
+	.form-control:-ms-input-placeholder{
+    color: #fff;
+    opacity: 0.55; }
+	
+	.form-control::-ms-input-placeholder{
+    color: #fff;
+    opacity: 0.55; } 
 
 .form-control{
 	width: 90%;
@@ -413,7 +488,7 @@ font-weight: normal;
 		position: absolute;
 		z-index: 4;
 		width: 100%;
-		bottom: 10%;
+		/*bottom: 10%;*/ /*10%;*/
 		left: 20%;
 		/*left: 0;
 		top: 43%;*/
@@ -586,6 +661,37 @@ h2 {
 h3 {
 	font-size: 0.75rem;
 }*/
+
+
+.dropdown-menu{
+	background-color: transparent;
+		   -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -ms-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+    transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+padding: 0;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+	
+}
+
+
+.dropdown-menu.show{
+    -webkit-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -moz-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -ms-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    -o-transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+    transition: max-height 0.5s, opacity 0.2s, visibility 0s;
+
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+
+}
 		
 	.menudesktop{
 		display: none;
@@ -627,6 +733,8 @@ h3 {
 height : 30px;
 margin: 5px;
 	}
+	
+
 
 #modalmobile .container{
 	display:flex;
