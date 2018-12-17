@@ -1,3 +1,28 @@
+// init Isotope
+/*var $grid = $('.grid').isotope({
+   itemSelector: '.grid-item',
+	layoutMode: 'fitRows',
+    percentPosition: true,
+	fitRows: {
+		gutter: '.gutter-sizer'
+	},
+	sortAscending: {
+    name: true,
+	annee: false, // (plus récent d’abord)
+    category: false
+	},
+	getSortData: {
+    name: '.name',
+    annee: '.annee',
+    category: '[data-category]'
+	},
+	masonry: {
+    // use element for option
+    columnWidth: '.grid-sizer'
+  }
+});*/
+	
+
 ( function( $ )
 {
 var modalState;
@@ -10,8 +35,28 @@ var window_width;
 	var window_height;
 
 
-	
+	function ajouterclasseAlpha(){
+//une fonction qui parcourt tout les grid-item et qui ajoute comme classe la première lettre du .titre
 
+	/*var titre = $(this).find('.titre').text();
+	console.log( titre );
+	var firstletter = titre.slice(0,1);
+	
+	$( ".sidebar" ).addClass(firsletter);*/
+	
+	//>> php
+	
+	
+$(".grid-item").each(function(){ 
+  //$(this).css({"background":"blue"});
+  var titre = $(this).find('.titre').text();
+	console.log( titre );
+	var firstletter = titre.slice(0,1).toLowerCase();
+	console.log( firstletter );
+	$(this).addClass(firstletter);
+});
+
+	}
 	
 function hidemenumobile(){
 	
@@ -121,6 +166,7 @@ function displaysearchmobile(){
 	$( document ).ready( function() {
 	
 	resized();
+	ajouterclasseAlpha();
 	
 	
 		$( '#btnmenumobile' ).click( function(e){

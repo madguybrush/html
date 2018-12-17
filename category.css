@@ -1,0 +1,161 @@
+	
+	/*****************CATEGORIE distrib****************/
+	
+	
+	#content{
+		margin-left: 17%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #F8F8F8;
+		width: 83%;
+		min-height: 1000px;
+	}
+	
+		#content header{
+			background-color: #FFF;
+			margin-top: 1.5rem;
+			margin-bottom: 1.5rem;
+			width: 100%;
+					color: #030310;
+		opacity: .5;
+	}
+	
+	#content header select{
+		margin-right: 1rem;
+		min-width: 100%;
+		max-width: 100%;
+		font-family: Montserrat;
+		font-size: 11px;
+
+	}
+	
+	.alphabetical{
+		text-align: center;
+		margin-top: .8rem;
+		letter-spacing: .12rem;
+	}
+	
+	
+	#content h2{
+		font-family: Piek;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+		#content .films{
+		padding-top: 1rem;
+		/*text-align:center;*/
+	}
+	
+/*	#content .film{
+		text-align:center;
+	}*/
+	
+		#content img{
+		max-width: 100%;
+		margin-bottom: 1rem;
+		/*text-align: center;
+		margin: auto;*/
+	}
+		
+		#content h3{
+			font-family: Piek;
+		text-align:center;
+		font-size: .8rem;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+			#content h4{
+				font-family: Montserrat;
+		text-align:center;
+		font-size: .7rem;
+		font-weight: bold;
+		color: #030310;
+	}
+				#content h5{
+				font-family: Montserrat;
+		text-align:center;
+		font-size: .5rem;
+		color: #030310;
+	}
+	
+
+#content .categorie{
+	color: #A78A3C;
+	font-size: .5rem;
+	text-transform: uppercase;
+}
+	
+	.grid-item { 
+width: 20%; /*25*/ /* 16 pour 5 */
+  margin-bottom: 2%;
+   margin-top: 2%;
+  /* background-color: black;*/
+}
+
+
+.grid{
+	/*margin-top: 50px;*/
+	margin-top: 4%;
+}
+
+.gutter-sizer { 
+width: 6%; 
+}
+
+
+@media only screen and (max-width: 992px){
+	.grid-sizer, .grid-item{
+		width: 30%; /*33*/
+		 margin-bottom: 5%;
+	}
+	.gutter-sizer { 
+width: 5%; 
+}
+
+
+}
+
+@media only screen and (max-width:576px){
+	.grid-sizer, .grid-item{
+		width: 48%; /*50*/
+	}
+	.gutter-sizer { 
+width: 4%; 
+}
+.itemcontent{
+	font-size: 1.2rem;
+}
+}
+
+@media only screen and (max-width:480px){
+	.grid-sizer, .grid-item{
+		width:  100%;
+	}
+	.itemcontent{
+	font-size: 1.4rem;
+}
+}
+
+@media only screen and (max-width:767.98px){
+
+	#content{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+			#content header{
+
+			margin-top: 100px;
+
+	}
+	
+		#content header select{
+		margin-bottom : 1rem;
+		/*min-width: 30%;
+		max-width: 30%;*/
+
+	}
+	
+}
