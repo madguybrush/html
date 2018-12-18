@@ -139,10 +139,11 @@ color : white;
 
 
 .tableFilm {
+	font-family: 'Lora', serif;
 	margin-top: 15px;
 	text-align: left;
 	width: 100%; 
-	font-family: Lora, verdana;
+	/*font-family: Lora, verdana;*/
 	color: #030310;
 	font-size: 0.6rem;
 	margin: 0px auto;
@@ -166,6 +167,7 @@ height : 3px;
 }
 
 .resume{
+	font-family: 'Lora', serif;
 	font-size: 1rem;
 	font-weight: 300;
 	margin-top: 1rem;
@@ -173,8 +175,10 @@ height : 3px;
 	padding-right: 4rem;
 	padding-top: 1rem;
 	padding-bottom: 1.5rem;
+	background-color: white;
 }
 .lauteur{
+	font-family: 'Lora', serif;
 	font-size: 1rem;
 	font-weight: 300;
 	font-style: italic;
@@ -183,6 +187,7 @@ height : 3px;
 	padding-right: 4rem;
 		padding-top: 1.5rem;
 	padding-bottom: 4rem;
+
 }
 
 .coldroite h3{
@@ -201,6 +206,7 @@ height : 3px;
     padding-bottom:56.25%;
     position:relative;
     height:0;
+		background-color: white;
 }
 .video-responsive iframe{
     left:0;
