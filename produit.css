@@ -1,0 +1,296 @@
+	
+	/*****************fiche produit****************/
+	
+	
+	html{
+		overflow-y: auto;
+	}
+	
+	* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+	
+	#produit{
+		margin-left: 17%;
+		background-color: #F5F5F5;
+		width: 83%;
+		color: #030310;
+		/*height: 100%;*/
+	}
+	
+		#produit header{
+			margin-bottom: 1.5rem;
+			color: #030310;
+		height: 66vh;
+		display: flex;
+		width: 100%;
+	}
+	
+	
+			
+	
+.imgaffiche{
+	border: 6px solid white; 
+	max-width: 100%;
+	margin-bottom: -50px;
+	text-align: center;
+/*width: 100%;*/
+}
+	
+	#produit .infosheader{
+		width: 100%;
+		padding-left: .5rem;
+		/*margin-bottom: 50px;*/
+		align-items : flex-end;
+	/*	margin-top: 33%;*/
+		
+	}
+	
+	
+	
+	.infosheader h1{
+	font-family: Piek, Montserrat, Arial;
+	margin-top: 0.5em;
+	text-shadow: -2px 2px #040415;
+color : white;
+	/*font-size: 3rem;*/
+	letter-spacing: 0.07em;
+	margin-bottom: 0.25rem;
+}
+
+.infosheader h2{
+	text-shadow: -2px 2px #040415;
+		font-size: 1rem;
+	letter-spacing: 0.07em;
+	color : white;
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+}
+
+#produit .content{
+			display: flex;
+			overflow: hidden;
+	
+	}
+	
+#produit .infoscontent{
+		padding-left: .5rem;
+		align-items : flex-start;
+			width: 100%;
+			padding-bottom: 4rem;
+	}
+
+.colgauche{
+	
+	/*margin-left: .5rem;*/
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 3rem; /*25px;*/
+	padding-right: 3rem; /*25px;*/
+	text-align: center;
+	/*height: 1000px;*/
+}
+.colgauche h3{
+	font-size: 1.2rem;
+	color: #A78A3C;
+	font-weight: bold;
+	
+	}
+
+.cta{
+	background-color: #A78A3C;
+	margin-top: 15px;
+	/*margin-right: 15px;
+	margin-left: 15px;*/
+	color: white;
+	font-size: 0.7rem;
+	padding: .4rem;
+	width: 100%;
+	-webkit-appearance: button-bevel;
+}
+
+
+.prix{
+	font-size: 0.9rem;
+	padding-top: 2rem;
+}
+
+
+.download{
+	background-color:#000946;
+		margin-top: 15px;
+	color: white;
+	font-size: 0.7rem;
+	padding: .4rem;
+	width: 100%;
+	-webkit-appearance: button-bevel;
+}
+
+.colgauche h4{
+	font-size: 0.9rem;
+	color: #030310;
+	font-weight: bold;
+	margin-top: 15px;
+	}
+
+
+.tableFilm {
+	margin-top: 15px;
+	text-align: left;
+	width: 100%; 
+	font-family: Lora, verdana;
+	color: #030310;
+	font-size: 0.6rem;
+	margin: 0px auto;
+	
+}
+.tableFilm .colLeft {
+	width: 50%; /*200px*/
+	/*text-align: right;*/
+	
+}
+.tableFilm .colRight {
+	width: 50%; 
+	/*text-align: left;*/
+	
+	
+}
+
+.trait{
+		width : 30px;
+height : 3px;
+}
+
+.resume{
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+}
+.lauteur{
+	font-size: 1rem;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 1rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+		padding-top: 1.5rem;
+	padding-bottom: 4rem;
+}
+
+.coldroite h3{
+	font-size: 1rem;
+	font-style: normal;
+	color: #A78A3C;
+	font-weight: bold;
+	
+	}
+	
+	
+		.video-responsive{
+		/*	padding-top: 1.5rem;
+			padding-bottom: 4rem;*/
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.gallery {
+	padding: 0;
+	padding-top: 1.5rem;
+}
+
+.gallery img{
+	max-width: 100%;
+}
+
+/**************responsive*******************/
+
+	/*@media only screen and (max-width:767.98px){*/
+		@media only screen and (max-width:992px){
+	#produit{
+		margin-left: 0;
+		margin-top:74px;
+		width: 100%;
+	}
+
+	
+
+	
+	.imgaffiche{
+		/*margin-bottom: 0;*/
+		max-width: 80%;
+		/*margin: 0 auto;*/
+	}
+	
+.download{
+
+	width: 200px;
+	
+}
+	
+	}
+	
+		@media only screen and (max-width:767.98px){
+	
+
+	#produit header{
+	background-image: none!important;
+	height: auto;
+	}
+	
+	.infosheader h1{
+	
+	text-shadow: none;
+color : #A78A3C;
+	}	
+		.infosheader h2{
+	
+margin-bottom: .5rem;
+	}	
+	
+	
+	
+		#produit .infosheader{
+		margin-right: 10%;
+		margin-left: 10%;
+		text-align: center;
+	}
+	
+		.imgaffiche{
+		margin-bottom: 0;
+		margin-top: 3rem;
+		}
+		
+		
+		.colgauche{
+
+	margin-top: 0;
+	
+		}
+		
+		
+		
+.cta{
+
+	width: 50%;
+
+}
+		
+	
+		}

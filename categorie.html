@@ -67,9 +67,9 @@
 						<div id="navbarNavDropdown" class="animated sidebar"> <!--class="collapse navbar-collapse">-->
 							<ul id="main-menu" class="navbar-nav flex-column ">
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="films" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Films</a>
-									<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
-										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="" class="dropdown-item">Distribution</a></li>
-										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="" class="dropdown-item">Production</a></li>
+									<ul class="dropdown-menu show" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="categorie.html" class="dropdown-item active">Distribution</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="categorie.html" class="dropdown-item">Production</a></li>
 									</ul>
 								</li>
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="livres" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Livres</a>
@@ -169,8 +169,8 @@
 							<ul id="main-menu" class="navbar-nav flex-column ">
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="films" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link active" id="menu-item-dropdown-12">Films</a>
 									<ul class="dropdown-menu show" aria-labelledby="menu-item-dropdown-12" role="menu">
-										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="" class="dropdown-item active">Distribution</a></li>
-										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="" class="dropdown-item">Production</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="categorie.html" class="dropdown-item active">Distribution</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="categorie.html" class="dropdown-item">Production</a></li>
 									</ul>
 								</li>
 								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="livres" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Livres</a>
@@ -241,178 +241,181 @@
 		
 <div id="content">
 
-<header>
+	<header>
 
-	<div class="row">
+		<div class="row">
 
-		<div class="col">
-			<select class="selecttitre" data-filter="titre">
-				<option selected disabled>TITRE</option>
-				<option value="sameTitle">After my Death</option>
-				<option value="sameTitle">De Sas en sas</option>
-				<option value="sameTitle">L'intrusa</option>
-				<option value="sameTitle">Grandeur et décadence d’un petit commerce de cinéma</option>
-			</select>
-		</div>
-		<div class="col">
-			<select class="selectauteur">
-				<option selected disabled>AUTEUR</option>
-				<option value="sameAuteur">Rachida Brackni</option>
-				<option value="sameAuteur">Leonardo Di Constanzo</option>
-				<option value="sameAuteur">Jean-Luc Godard</option>
-				<option value="sameAuteur">Kim Ui-Seok</option>
-			</select>
-		</div>
-		<div class="col">
-			<select class="selectcategory">
-				<option selected disabled>CATEGORIE</option>
-				<option value="sameCategory">Distribution</option>
-				<option value="sameCategory">Production</option>
-				<option value="sameCategory">Court-Métrage</option>
-				<option value="sameCategory">Film de Patrimoine</option>
-			</select>
-		</div>
+			<div class="col">
+				<select class="selecttitre" data-filter="titre">
+					<option selected disabled>TITRE</option>
+					<option value="sameTitle">After my Death</option>
+					<option value="sameTitle">De Sas en sas</option>
+					<option value="sameTitle">L'intrusa</option>
+					<option value="sameTitle">Grandeur et décadence d’un petit commerce de cinéma</option>
+				</select>
+			</div>
+			<div class="col">
+				<select class="selectauteur">
+					<option selected disabled>AUTEUR</option>
+					<option value="sameAuteur">Rachida Brackni</option>
+					<option value="sameAuteur">Leonardo Di Constanzo</option>
+					<option value="sameAuteur">Jean-Luc Godard</option>
+					<option value="sameAuteur">Kim Ui-Seok</option>
+				</select>
+			</div>
+			<div class="col">
+				<select class="selectcategory">
+					<option selected disabled>CATEGORIE</option>
+					<option value="sameCategory">Distribution</option>
+					<option value="sameCategory">Production</option>
+					<option value="sameCategory">Court-Métrage</option>
+					<option value="sameCategory">Film de Patrimoine</option>
+				</select>
+			</div>
 
-	</div>
-	<div class="row">
-		<div class="col alphabetical">
-	<!--<a href="#" class="selectalpha a">A</a> B C D E F G H I J K L M N O P Q R S T U V W X Y Z-->
-	<button class="selectalpha nostyle" data-filter=".a">A</button>B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 		</div>
-	</div>
-	
-</header>
+		<div class="row">
+			<div class="col alphabetical">
+		<!--<a href="#" class="selectalpha a">A</a> B C D E F G H I J K L M N O P Q R S T U V W X Y Z-->
+		<a href="#" class="selectalpha nostyle" data-filter=".a">A</a><a href="#" class="selectalpha nostyle" data-filter=".b">B</a><a href="#" class="selectalpha nostyle" data-filter=".c">C</a><a href="#" class="selectalpha nostyle" data-filter=".d">D</a><a href="#" class="selectalpha nostyle" data-filter=".e">E</a><a href="#" class="selectalpha nostyle" data-filter=".f">F</a><a href="#" class="selectalpha nostyle" data-filter=".g">G</a><a href="#" class="selectalpha nostyle" data-filter=".h">H</a><a href="#" class="selectalpha nostyle" data-filter=".i">I</a><a href="#" class="selectalpha nostyle" data-filter=".j">J</a><a href="#" class="selectalpha nostyle" data-filter=".k">K</a><a href="#" class="selectalpha nostyle" data-filter=".l">L</a><a href="#" class="selectalpha nostyle" data-filter=".m">M</a><a href="#" class="selectalpha nostyle" data-filter=".n">N</a><a href="#" class="selectalpha nostyle" data-filter=".o">O</a><a href="#" class="selectalpha nostyle" data-filter=".p">P</a><a href="#" class="selectalpha nostyle" data-filter=".q">Q</a><a href="#" class="selectalpha nostyle" data-filter=".r">R</a><a href="#" class="selectalpha nostyle" data-filter=".s">S</a><a href="#" class="selectalpha nostyle" data-filter=".t">T</a><a href="#" class="selectalpha nostyle" data-filter=".u">U</a><a href="#" class="selectalpha nostyle" data-filter=".v">V</a><a href="#" class="selectalpha nostyle" data-filter=".w">W</a><a href="#" class="selectalpha nostyle" data-filter=".x">X</a><a href="#" class="selectalpha nostyle" data-filter=".y">Y</a><a href="#" class="selectalpha nostyle" data-filter=".z">Z</a>		
+		</div>
+		</div>
+		
+	</header>
 
-<div class="row films">
+	<div class="row films">
 	<div class="col-md-12">
 		<h2>2019</h2>
 	</div>
 
 </div>
-<div class=" grid gridcatalogue">
-<div class="gutter-sizer"></div>
+	<div class=" grid gridcatalogue">
+		<div class="gutter-sizer"></div>
 
 
 	
-	<div class="grid-item">
-		<img src="img/film1.png" alt="after my death">
-		<h3 class="titre">After my Death</h3>
-		<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film2.png" alt="sas">
-		<h3 class="titre">De Sas en sas</h3>
-		<h4>de <span class="auteur">Rachida Brackni</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film3.png" alt="intrusa">
-		<h3 class="titre">L'intrusa</h3>
-		<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
-		<h5>sortie le 12 septembre</h5>
-		<h5><span class="categorie">Film de Patrimoine</span></h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film4.png" alt="grandeur">
-		<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
-		<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-
 		<div class="grid-item">
-		<img src="img/film1.png" alt="after my death">
-		<h3 class="titre">After my Death</h3>
-		<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film2.png" alt="sas">
-		<h3 class="titre">De Sas en sas</h3>
-		<h4>de <span class="auteur">Rachida Brackni</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film3.png" alt="intrusa">
-		<h3 class="titre">L'intrusa</h3>
-		<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film4.png" alt="grandeur">
-		<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
-		<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
-		<h5>sortie le 12 septembre</h5>
-		<h5><span class="categorie">Court-Métrage</span></h5>
-	</div>
+			<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+			<h3 class="titre">After my Death</h3>
+			<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+			<h3 class="titre">De Sas en sas</h3>
+			<h4>de <span class="auteur">Rachida Brackni</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+			<h3 class="titre">L'intrusa</h3>
+			<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+			<h5>sortie le 12 septembre</h5>
+			<h5><span class="categorie">Film de Patrimoine</span></h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+			<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+			<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+
+			<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+			<h3 class="titre">After my Death</h3>
+			<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+			<h3 class="titre">De Sas en sas</h3>
+			<h4>de <span class="auteur">Rachida Brackni</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+			<h3 class="titre">L'intrusa</h3>
+			<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+			<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+			<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+			<h5>sortie le 12 septembre</h5>
+			<h5><span class="categorie">Court-Métrage</span></h5>
+		</div>
 	
-</div>
+	</div>
 
 
-<div class="row films">
+	<div class="row films">
 	<div class="col-md-12">
 		<h2>2018</h2>
 	</div>
 
 </div>
-<div class=" grid gridcatalogue">
-<div class="gutter-sizer"></div>
+	<div class=" grid gridcatalogue">
+		<div class="gutter-sizer"></div>
 
-
-	<div class="grid-item">
-		<img src="img/film1.png" alt="after my death">
-		<h3 class="titre">After my Death</h3>
-		<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film2.png" alt="sas">
-		<h3 class="titre">De Sas en sas</h3>
-		<h4>de <span class="auteur">Rachida Brackni</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film3.png" alt="intrusa">
-		<h3 class="titre">L'intrusa</h3>
-		<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film4.png" alt="grandeur">
-		<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
-		<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
 
 		<div class="grid-item">
-		<img src="img/film1.png" alt="after my death">
-		<h3 class="titre">After my Death</h3>
-		<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film2.png" alt="sas">
-		<h3 class="titre">De Sas en sas</h3>
-		<h4>de <span class="auteur">Rachida Brackni</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film3.png" alt="intrusa">
-		<h3 class="titre">L'intrusa</h3>
-		<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
-	<div class="grid-item">
-		<img src="img/film4.png" alt="grandeur">
-		<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
-		<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
-		<h5>sortie le 12 septembre</h5>
-	</div>
+			<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+			<h3 class="titre">After my Death</h3>
+			<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+			<h3 class="titre">De Sas en sas</h3>
+			<h4>de <span class="auteur">Rachida Brackni</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+			<h3 class="titre">L'intrusa</h3>
+			<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+			<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+			<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+
+			<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+			<h3 class="titre">After my Death</h3>
+			<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+			<h3 class="titre">De Sas en sas</h3>
+			<h4>de <span class="auteur">Rachida Brackni</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+			<h3 class="titre">L'intrusa</h3>
+			<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
+		<div class="grid-item">
+			<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+			<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+			<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+			<h5>sortie le 12 septembre</h5>
+		</div>
 	
-</div>
+	</div>
 
 
 </div>
+<footer>
+<a href="mentions.html" alt="mentions légales">mentions légales / conditions de ventes</a>
+</footer>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>

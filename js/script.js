@@ -1,27 +1,4 @@
-// init Isotope
-/*var $grid = $('.grid').isotope({
-   itemSelector: '.grid-item',
-	layoutMode: 'fitRows',
-    percentPosition: true,
-	fitRows: {
-		gutter: '.gutter-sizer'
-	},
-	sortAscending: {
-    name: true,
-	annee: false, // (plus récent d’abord)
-    category: false
-	},
-	getSortData: {
-    name: '.name',
-    annee: '.annee',
-    category: '[data-category]'
-	},
-	masonry: {
-    // use element for option
-    columnWidth: '.grid-sizer'
-  }
-});*/
-	
+
 
 ( function( $ )
 {

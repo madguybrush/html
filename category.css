@@ -8,7 +8,7 @@
 		padding-right: 10%;
 		background-color: #F8F8F8;
 		width: 83%;
-		min-height: 1000px;
+		min-height: 85%;
 	}
 	
 		#content header{
@@ -33,6 +33,12 @@
 		text-align: center;
 		margin-top: .8rem;
 		letter-spacing: .12rem;
+	}
+	
+		.alphabetical a{
+padding: .2rem;
+color: #030310;
+
 	}
 	
 	
@@ -138,7 +144,9 @@ width: 4%;
 }
 }
 
-@media only screen and (max-width:767.98px){
+	/*@media only screen and (max-width:767.98px){*/
+/*@media (max-width:767.98px){*/
+	@media only screen and (max-width:992px){
 
 	#content{
 		margin-left: 0;

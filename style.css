@@ -4,6 +4,12 @@
 	font-family: Montserrat, Verdana, sans-serif;
 }
 
+html{
+
+	overflow: auto;
+	/*background-color: rgba(239, 149, 5, 0.2);*/
+}
+
 html, body{
 	width: 100%;
 	height: 100%;
@@ -11,6 +17,7 @@ html, body{
 	font-size: 100%; 
 	font-weight: 400;
 	color: white;
+	/*overflow: auto;*/
 	/*background-color: rgba(239, 149, 5, 0.2);*/
 }
 
@@ -266,7 +273,7 @@ padding: 0;
 	margin-top: 0.5em;
 	text-shadow: -2px 2px #040415;
 	text-transform: uppercase;
-	font-size: 3rem;
+	/*font-size: 3rem;*/
 	letter-spacing: 0.07em;
 	margin-bottom: 0.25rem;
 }
@@ -450,7 +457,7 @@ padding: 0;
 
 /***************VIDEO*******************/
 
-	#myVideo{
+	.myVideo{
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -644,7 +651,8 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	
 	
 	
-@media (max-width:767.98px){
+/*@media (max-width:767.98px){*/
+	@media (max-width:992px){
 	
 	    #wpadminbar{
         display:none;
@@ -652,8 +660,17 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 	/*html{margin-top:0!important;}*/
 	
 	html, body{
-	font-size: 70%; 
+	font-size: 80%; 
 	}
+	
+	.intro h2, .layer h2{
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	
+.myVideo{
+	display: none;
+}
 	
 /*	h1 {
 	font-size: 1.5rem;
@@ -817,16 +834,35 @@ width: auto;
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)");
 }*/
 
-	.intro{ 
+	.intro, .layer{ 
 	margin-left: 5%;
 	margin-bottom: 2%;
 }
-
+/*
 	.layer{ 
 	left: 5%;
 	bottom: 2%;
+}*/
+
+.flex-container{
+	flex-direction: column-reverse;
+
+}
+.section .flex-container{
+	align-items: flex-start;
+	padding-bottom: 15px;
 }
 
+.fleximg{
+	max-width:50%;
+}
+
+.plusbutton{
+	width: 50px;
+	height: 50px;
+}
+
+	
 .tag {
 	font-size: 0.5rem;
 }
@@ -843,7 +879,55 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 
 	}
 	
+	/**************** footer ***************/
 	
+	
+
+footer{
+		margin-left: 17%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #F8F8F8;
+		width: 83%;
+		/*min-height: 100%;*/
+		/*height: 10%;*/
+		font-size: 0.6rem;
+		letter-spacing: .12rem;
+		font-family: Montserrat;
+		text-align: left;
+		font-weight: 200;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		
+	}
+	
+ footer a{
+		color : #919191;
+		font-size: 0.6rem;
+		letter-spacing: .12rem;
+		font-family: Montserrat;
+				text-align: left;
+		font-weight: 200;
+		
+	}
+	
+		footer a:hover{
+		text-decoration: none;
+		color : #000;
+	}
+	
+	/*@media only screen and (max-width:767.98px){*/
+/*@media (max-width:767.98px){*/
+	@media only screen and (max-width:992px){
+	footer{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+
+	
+}
 	
 
 	
