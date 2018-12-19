@@ -21,23 +21,34 @@
 	}
 	
 		#produit header{
-			margin-bottom: 1.5rem;
+			/*margin-bottom: 1.5rem;*/
 			color: #030310;
 		height: 66vh;
 		display: flex;
 		width: 100%;
 	}
 	
-	
+			.padding0{
+			padding-left: 0;
+			padding-right: 0;
+		}
 			
 	
 .imgaffiche{
-	border: 6px solid white; 
+	border: .3rem solid white; 
 	max-width: 100%;
-	margin-bottom: -50px;
-	text-align: center;
-/*width: 100%;*/
+	margin-bottom: -70px;
+	width: 100%;
 }
+
+		.padding2{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+				.padding25{
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
 	
 	#produit .infosheader{
 		width: 100%;
@@ -53,18 +64,18 @@
 	.infosheader h1{
 	font-family: Piek, Montserrat, Arial;
 	margin-top: 0.5em;
-	text-shadow: -2px 2px #040415;
+	text-shadow: -1px 1px #000;
 color : white;
-	/*font-size: 3rem;*/
+	font-size: 3rem;
 	letter-spacing: 0.07em;
 	margin-bottom: 0.25rem;
 }
 
 .infosheader h2{
-	text-shadow: -2px 2px #040415;
-		font-size: 1rem;
+	text-shadow: -1px 1px #000;
+		font-size: 1.3rem;
 	letter-spacing: 0.07em;
-	color : white;
+	color: white;
 	font-weight: 300;
 	margin-bottom: 1.5rem;
 	line-height: 1.5rem;
@@ -87,13 +98,23 @@ color : white;
 	
 	/*margin-left: .5rem;*/
 
-	margin-top: 50px;
+	margin-top: 90px;
 	margin-bottom: 50px;
-	padding-left: 3rem; /*25px;*/
-	padding-right: 3rem; /*25px;*/
+	/*padding-left: .5rem;
+	padding-right: .5rem; */
 	text-align: center;
 	/*height: 1000px;*/
 }
+.coldroite{
+
+	/*padding-top: 20px;*/
+	margin-bottom: 50px;
+	padding-left: 0rem; /*25px;*/
+	padding-right: 3rem; /*25px;*/
+	/*height: 1000px;*/
+}
+
+
 .colgauche h3{
 	font-size: 1.2rem;
 	color: #A78A3C;
@@ -110,59 +131,108 @@ color : white;
 	font-size: 0.7rem;
 	padding: .4rem;
 	width: 100%;
+	/*min-width: 200px;*/ /* 100%;*/
 	-webkit-appearance: button-bevel;
 }
 
 
 .prix{
 	font-size: 0.9rem;
-	padding-top: 2rem;
+	padding-top: 3rem; /*2rem;*/
+	background-color: white;
+	
 }
 
+.cadreblanc{
+	background-color: white;
+	padding: 2rem;	
+}
+
+.cadregris{
+	background-color: #F5F5F5;
+	padding: 2rem;	
+}
+		
+		
 
 .download{
 	background-color:#000946;
 		margin-top: 15px;
 	color: white;
 	font-size: 0.7rem;
-	padding: .4rem;
+	padding: 1rem;
 	width: 100%;
 	-webkit-appearance: button-bevel;
+}
+
+
+.downloadall{
+	background-color: transparent;
+	border: 2px solid #000946;
+		margin-top: 15px;
+	color: #000946;
+	font-size: 0.7rem;
+	padding: 1rem;
+	width: 100%;
+	/*-webkit-appearance: button-bevel;*//
 }
 
 .colgauche h4{
 	font-size: 0.9rem;
 	color: #030310;
 	font-weight: bold;
-	margin-top: 15px;
+	text-align: left;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 	}
 
+.centerTab{
+width: 100%;
+margin: 0 auto;	
+/*	padding-left: 3rem;
+	padding-right: 3rem;*/
+}
 
 .tableFilm {
 	font-family: 'Lora', serif;
-	margin-top: 15px;
+	margin-top: 1.5rem;
 	text-align: left;
 	width: 100%; 
 	/*font-family: Lora, verdana;*/
 	color: #030310;
 	font-size: 0.6rem;
-	margin: 0px auto;
+	/*margin: 0px auto;*/
+
 	
 }
+
+.tableFilm .titre{
+	font-family: 'Lora', serif;
+	font-size: 0.8rem;
+	
+}
+
+.tableFilm .acteurs{
+	font-family: 'Lora', serif;
+	font-size: 0.7rem;
+}
+
+
 .tableFilm .colLeft {
 	width: 50%; /*200px*/
-	/*text-align: right;*/
+	text-align: left;
+	padding: .3rem;
 	
 }
 .tableFilm .colRight {
 	width: 50%; 
-	/*text-align: left;*/
-	
+text-align: left;
+	padding: .3rem;
 	
 }
 
 .trait{
-		width : 30px;
+		width : 35px;
 height : 3px;
 }
 
@@ -170,11 +240,11 @@ height : 3px;
 	font-family: 'Lora', serif;
 	font-size: 1rem;
 	font-weight: 300;
-	margin-top: 1rem;
+	/*margin-top: 1rem;*/
 	padding-left: 4rem;
 	padding-right: 4rem;
-	padding-top: 1rem;
-	padding-bottom: 1.5rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 	background-color: white;
 }
 .lauteur{
@@ -195,10 +265,11 @@ height : 3px;
 	font-style: normal;
 	color: #A78A3C;
 	font-weight: bold;
-	
+
 	}
 	
-	
+
+			
 		.video-responsive{
 		/*	padding-top: 1.5rem;
 			padding-bottom: 4rem;*/
@@ -238,19 +309,32 @@ height : 3px;
 	
 
 	
-	.imgaffiche{
-		/*margin-bottom: 0;*/
-		max-width: 80%;
-		/*margin: 0 auto;*/
-	}
-	
-.download{
-
-	width: 200px;
-	
+.download, .downloadall{
+	width: 25%;
+	margin-right: .8rem;
 }
 	
+	
+	.colbuttons{
+		
+		width: 100%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
+	
+.cta{
+	max-width: 200px;
+	
+	}
+	
+
+	
+	
+		}
+	
+	
+	
+	
 	
 		@media only screen and (max-width:767.98px){
 	
@@ -268,7 +352,36 @@ color : #A78A3C;
 		.infosheader h2{
 	
 margin-bottom: .5rem;
-	}	
+
+	text-shadow: none;
+	margin-top: .7rem;
+	font-weight: 400;
+	color: #030310;
+
+}
+.coldroite{
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+	.colgauche h4{
+		text-align: center;
+		
+	}
+	
+		.colbuttons{
+		text-align: center;
+	}
+	
+	.tableFilm .colLeft{
+		text-align: right;
+	}
+	
+	
+	#produit .infoscontent{
+		margin: 1rem;
+		
+	}
 	
 	
 	
@@ -282,6 +395,8 @@ margin-bottom: .5rem;
 		margin-bottom: 0;
 		margin-top: 3rem;
 		}
+		
+
 		
 		
 		.colgauche{
