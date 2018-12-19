@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capricci</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/fontawesome-all.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+	  	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+		<link rel="stylesheet" href="recherche.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- menu mobile -->
+<nav class="navbar  fondnoir fixed-top menumobile navbar-dark">
+
+<div class="container">
+
+
+				<a id="brandmobile" class="navbar-brand" rel="home" href="index.html" title="Capricci" alt="Capricci" itemprop="url">
+					<img alt="logo Capricci" src="img/logomobile.png">
+				</a>
+				
+				
+				<div class="flexbuttons">
+				<button id="btnmenusearch" class="btn btnsearch" >  <!--type="submit" id="searchsubmit">   my-2 my-sm-0 -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+						<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+					
+					<rect class="cross1" x="11" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="2" height="24"></rect>
+					<rect class="cross2" x="0" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="24" height="2"></rect>
+					</svg>
+				
+
+				</button>
+				
+				<button id="btnmenumobile" class="btn" type="button" > <!-- navbar-toggler-->
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+				</button>
+				
+
+				
+				</div>
+				
+		
+
+
+</div>
+
+
+</nav>
+
+<!-- modal mobile -->				
+<nav class="navbar navbar-dark" id="modalmobile">
+
+	<div class="container">
+				
+				
+				<div class="menus animated fadeInDown">
+									<!-- The WordPress Menu goes here -->
+						<div id="navbarNavDropdown" class="animated sidebar"> <!--class="collapse navbar-collapse">-->
+							<ul id="main-menu" class="navbar-nav flex-column ">
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="films" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Films</a>
+									<ul class="dropdown-menu show" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="categorie.html" class="dropdown-item active">Distribution</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="categorie.html" class="dropdown-item">Production</a></li>
+									</ul>
+								</li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="livres" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Livres</a>
+									<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Tout de A à Z" href="" class="dropdown-item">Tout de A à Z</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="La première collection" href="" class="dropdown-item">La première collection</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Actualité Critique" href="" class="dropdown-item">Actualité Critique</a></li>								
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Hors collection" href="" class="dropdown-item">Hors collection</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Actualité Critique" href="" class="dropdown-item">Ecrire avec, lire pour</a></li>								
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Hors collection" href="" class="dropdown-item">La collection des fondations</a></li>
+									</ul>
+								</li>
+								
+							</ul>
+
+						</div>	
+							<!-- The WordPress Menu goes here -->
+						<div class="sousmenu ">
+							<!--<a href="https://capricci-international.com" alt=""  >INTERNATIONAL SALES</a>-->
+							
+							<ul id="sub-menu" class="navbar-nav flex-column"> <!--  ml-auto -->
+								
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
+									<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="DVD" href="http://testcapricci.fr/categorie-produit/dvd/" class="dropdown-item">DVD</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Livres" href="http://testcapricci.fr/categorie-produit/livres/" class="dropdown-item">Livres</a></li>
+									</ul>
+								</li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10 nav-item"><a title="agenda" href="" class="nav-link">Agenda</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a title="capricci" href="" class="nav-link">Qui sommes-nous</a></li>
+							
+							</ul>
+						</div>
+					
+					</div>
+				
+
+				<div class="animated menuBasmobile">
+						<!--<div class="sousmenu">
+							<a href="https://capricci-international.com" alt=""  >INTERNATIONAL SALES</a>
+						</div>-->
+						
+					<div>
+						<a href="https://www.facebook.com/capricci" alt="facebook" target="_blank"><img alt="facebook Capricci" src="img/fbShare.svg" class="socialbutton"></a>
+						<a href="https://twitter.com/CapricciFrance" alt="facebook" target="_blank"><img alt="twitter Capricci" src="img/TwitterShare.svg" class="socialbutton"></a>
+						<!--<i class="social fab fa-facebook-square"></i>
+						<i class="social fab fa-twitter-square"></i>-->
+					</div>
+				</div>
+	</div>
+
+</nav>
+
+<!-- modal search -->
+<nav class="navbar navbar-dark" id="modalsearch">
+
+	<div class="container">
+
+					<div class="searchform animated fadeInDown">
+					RECHERCHER
+					    <form class="flex-container" role="search" method="get" action="">  
+							<input class="form-control" type="search" placeholder="titre, auteur,..." name="s" aria-label="Search">  
+							<button class="btn btnsearch" type="submit" id="searchsubmit">  
+							<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+								<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+							</svg>-->
+							
+							</button>
+						</form>
+					</div>
+	</div>
+
+</nav>
+
+<!-- menu >768 -->
+<nav class="navbar fondnoir fixed-top navbar-expand-md navbar-dark menudesktop animated fadeInLeft">
+
+			<div class="container">
+		
+					<!-- Your site title as branding in the menu -->
+				
+				<div id="menuHaut" >	
+					<a class="navbar-brand  animated fadeInLeft" rel="home" href="index.html" title="Capricci" alt="Capricci" itemprop="url">
+						<img alt="logo Capricci" src="img/logo.png">
+					</a>
+
+						<!-- end custom logo -->
+						
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+
+					<div class="menus">
+									<!-- The WordPress Menu goes here -->
+						<div id="navbarNavDropdown" class="animated fadeInLeft"> <!--class="collapse navbar-collapse">-->
+							<ul id="main-menu" class="navbar-nav flex-column ">
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="films" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link active" id="menu-item-dropdown-12">Films</a>
+									<ul class="dropdown-menu show" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Distribution" href="categorie.html" class="dropdown-item active">Distribution</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Production" href="categorie.html" class="dropdown-item">Production</a></li>
+									</ul>
+								</li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="livres" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Livres</a>
+									<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="Tout de A à Z" href="" class="dropdown-item">Tout de A à Z</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="La première collection" href="" class="dropdown-item">La première collection</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Actualité Critique" href="" class="dropdown-item">Actualité Critique</a></li>								
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Hors collection" href="" class="dropdown-item">Hors collection</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Actualité Critique" href="" class="dropdown-item">Ecrire avec, lire pour</a></li>								
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Hors collection" href="" class="dropdown-item">La collection des fondations</a></li>
+									</ul>
+								</li>
+								
+							</ul>
+
+						</div>	
+							<!-- The WordPress Menu goes here -->
+						<div class="sousmenu animated fadeInLeft">
+							<!--<a href="https://capricci-international.com" alt=""  >INTERNATIONAL SALES</a>-->
+							
+							<ul id="sub-menu" class="navbar-nav flex-column"> <!--  ml-auto -->
+								
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item dropdown active menu-item-11 nav-item"><a title="Boutique" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-12">Boutique</a>
+									<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-12" role="menu">
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25 nav-item"><a title="DVD" href="http://testcapricci.fr/categorie-produit/dvd/" class="dropdown-item">DVD</a></li>
+										<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-13 nav-item"><a title="Livres" href="http://testcapricci.fr/categorie-produit/livres/" class="dropdown-item">Livres</a></li>
+									</ul>
+								</li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10 nav-item"><a title="agenda" href="" class="nav-link">Agenda</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a title="capricci" href="" class="nav-link">Qui sommes-nous</a></li>
+							
+							</ul>
+						</div>
+					
+					</div>
+
+				</div>
+				
+				<div id="menuBas" class="animated fadeInLeft" >
+				
+
+					
+					<div class="searchform">
+					    <form class="flex-container" role="search" method="get" action="">  <!--  my-lg-0 margin-left --> <!-- < ?php echo esc_url( home_url( '/' ) ); ?> -->
+							<input class="form-control" type="search" placeholder="titre, auteur,..." name="s" aria-label="Search">  
+							<button class="btn btnsearch" type="submit" id="searchsubmit">  <!-- btn-outline-success  --><!-- my-2 my-sm-0 -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+								<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+							</svg>
+							</button>
+						</form>
+						</div>
+					
+					<div>
+						
+						<a href="https://www.facebook.com/capricci" alt="facebook" target="_blank"><img alt="facebook Capricci" src="img/fbShare.svg" class="socialbutton"></a>
+						<a href="https://twitter.com/CapricciFrance" alt="facebook" target="_blank"><img alt="twitter Capricci" src="img/TwitterShare.svg" class="socialbutton"></a>
+					</div>
+				
+				</div>
+				
+				
+			</div>
+			<!-- .container -->
+			
+		</nav>
+	
+		
+<div id="content">
+
+	<header class="container-fluid padding10">
+
+		<div class="row">
+
+			<div class="col">
+				<h1 class="recherche">RESULTATS DE LA RECHERCHE POUR <strong>« NOM DE LA RECHERCHE »</strong></h1>
+			</div>
+
+
+		</div>
+	
+		
+	</header>
+	<div class="container-fluid padding10 content">
+		<div class="row films">
+			<div class="col-md-12">
+				<h2>FILMS</h2>
+			</div>
+
+		</div>
+		<div class=" grid gridcatalogue">
+			<div class="gutter-sizer"></div>
+
+
+		
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+				<h3 class="titre">After my Death</h3>
+				<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+				<h3 class="titre">De Sas en sas</h3>
+				<h4>de <span class="auteur">Rachida Brackni</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+				<h3 class="titre">L'intrusa</h3>
+				<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+				<h5>sortie le 12 septembre</h5>
+				<h5><span class="categorie">Film de Patrimoine</span></h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+				<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+				<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+
+				<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+				<h3 class="titre">After my Death</h3>
+				<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+				<h3 class="titre">De Sas en sas</h3>
+				<h4>de <span class="auteur">Rachida Brackni</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+				<h3 class="titre">L'intrusa</h3>
+				<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+				<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+				<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+				<h5>sortie le 12 septembre</h5>
+				<h5><span class="categorie">Court-Métrage</span></h5>
+			</div>
+		
+		</div>
+
+	</div>
+	<div class="container-fluid padding10 content">
+		<div class="row films">
+			<div class="col-md-12">
+				<h2>LIVRES</h2>
+			</div>
+
+		</div>
+		<div class=" grid gridcatalogue">
+			<div class="gutter-sizer"></div>
+
+
+		
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+				<h3 class="titre">After my Death</h3>
+				<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+				<h3 class="titre">De Sas en sas</h3>
+				<h4>de <span class="auteur">Rachida Brackni</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+				<h3 class="titre">L'intrusa</h3>
+				<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+				<h5>sortie le 12 septembre</h5>
+				<h5><span class="categorie">Film de Patrimoine</span></h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+				<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+				<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+
+				<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film1.png" alt="after my death"></a>
+				<h3 class="titre">After my Death</h3>
+				<h4>de <span class="auteur">Kim Ui-Seok</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film2.png" alt="sas"></a>
+				<h3 class="titre">De Sas en sas</h3>
+				<h4>de <span class="auteur">Rachida Brackni</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film3.png" alt="intrusa"></a>
+				<h3 class="titre">L'intrusa</h3>
+				<h4>de <span class="auteur">Leonardo Di Constanzo</span></h4>
+				<h5>sortie le 12 septembre</h5>
+			</div>
+			<div class="grid-item">
+				<a href="produit.html" alt=""><img src="img/film4.png" alt="grandeur"></a>
+				<h3 class="titre">Grandeur et décadence d’un petit commerce de cinéma</h3>
+				<h4>de <span class="auteur">Jean-Luc Godard</span> </h4>
+				<h5>sortie le 12 septembre</h5>
+				<h5><span class="categorie">Court-Métrage</span></h5>
+			</div>
+		
+		</div>
+
+	</div>
+
+</div>
+<footer>
+<a href="mentions.html" alt="mentions légales">mentions légales / conditions de ventes</a>
+</footer>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<!--<script type="text/javascript" src="https://northridgechurch.com/am-site/themes/NorthRidge/js/build/site.min.js?v=1520531714"></script>-->
+
+ <!--<script src="js/imagesloaded.pkgd.min.js"></script>-->
+	 <script src="js/isotope.pkgd.min.js"></script>
+	 	<script type='text/javascript' src='js/script.js'></script>
+<script type="text/javascript">
+
+
+
+
+// init Isotope
+var $grid = $('.grid').isotope({
+   itemSelector: '.grid-item',
+	layoutMode: 'fitRows',
+    percentPosition: true,
+	fitRows: {
+		gutter: '.gutter-sizer'
+	},
+	  // filter element with numbers greater than 50
+  
+
+
+	masonry: {
+    // use element for option
+    columnWidth: '.grid-sizer'
+  }
+});
+
+
+
+/*
+  sameTitle: function() {
+    var titre = $(this).find('.titre').text();
+	console.log( titre );
+    return titre.match( );
+  }*/
+  
+  var filterFns = {
+   sameTitle: function() {
+    // _this_ is the item element. Get text of element's .number
+    var titre = $(this).find('.titre').text();
+	var selected = $( ".selecttitre option:selected" ).text();
+	console.log( titre );
+    // return true to show, false to hide
+    return titre === selected;
+	//return parseInt( number, 10 ) > 50;
+  },
+     sameAuteur: function() {
+    // _this_ is the item element. Get text of element's .number
+    var auteur = $(this).find('.auteur').text();
+	var selected = $( ".selectauteur option:selected" ).text();
+	console.log( auteur );
+    // return true to show, false to hide
+    return auteur === selected;
+	//return parseInt( number, 10 ) > 50;
+  },
+     sameCategory: function() {
+    // _this_ is the item element. Get text of element's .number
+    var categorie = $(this).find('.categorie').text();
+	var selected = $( ".selectcategory option:selected" ).text();
+	//console.log( titre );
+    // return true to show, false to hide
+    return categorie === selected;
+	//return parseInt( number, 10 ) > 50;
+  },
+   /*    sameAlpha: function() {
+
+	var titre = $(this).find('.titre').text();
+	console.log( titre );
+	var firstletter = titre.slice(0,1);
+	console.log( firstletter );
+	var letter = this.value;
+	return firstletter === letter;
+
+  }*/
+  };
+
+
+$('.selecttitre').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  console.log( filterValue );
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
+
+$('.selectauteur').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  console.log( filterValue );
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+  
+});
+
+$('.selectcategory').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  console.log( filterValue );
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+  
+});
+
+$('.selectalpha').on( 'click', function() {
+  // get filter value from option value
+  
+    var filterValue = $(this).attr('data-filter');
+	console.log( filterValue );
+  // use filter function if value matches
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+  
+  
+ /* var filterValue = "sameAlpha"; 
+  var letter = $(this).text();
+  console.log( letter);
+  filterValue = filterFns[ filterValue ] || filterValue;
+ $grid.isotope({ filter: filterValue });*/
+  
+});
+
+/*
+$( ".selecttitre" ).change(function() {
+  
+  var str = "";
+    $( ".selecttitre option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+
+	var filterValue =  $(this).attr('data-filter'); 
+	console.log( filterValue );
+	filterValue = filterFns[ filterValue ] || filterValue;
+	$grid.isotope({ filter: filterValue });
+});
+*/
+
+</script>
+
+
+	
+
+</body>
+</html>

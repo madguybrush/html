@@ -1,0 +1,164 @@
+	
+	/*****************CATEGORIE distrib****************/
+	
+	
+	#content{
+		margin-left: 17%;
+
+		background-color: #F5F5F5;
+		width: 83%;
+		min-height: 85%;
+	}
+	
+	.padding10{
+				padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+		#content header{
+			/*background-color: #F5F5F5;*/
+			padding-top: 2.5rem;
+			margin-bottom: 1.5rem;
+			width: 100%;
+					color: #030310;
+		opacity: .5;
+	}
+	
+	
+	#content .content{
+	background-color: #FFF;
+	/*padding: 1rem;*/
+}
+
+#content h1.recherche{
+	font-size: 1.2rem;
+	font-family: Montserrat;
+	
+}
+
+#content h1.recherche strong{
+	font-size: 1.2rem;
+	color: black;
+	opacity: 1;
+	
+}
+	
+	
+	#content h2{
+		font-family: Piek;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+		#content .films{
+		padding-top: 2rem;
+	}
+	
+
+	
+		#content img{
+		max-width: 100%;
+		margin-bottom: 1rem;
+
+	}
+		
+		#content h3{
+			font-family: Piek;
+		text-align:center;
+		font-size: .8rem;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+			#content h4{
+				font-family: Montserrat;
+		text-align:center;
+		font-size: .7rem;
+		font-weight: bold;
+		color: #030310;
+	}
+				#content h5{
+				font-family: Montserrat;
+		text-align:center;
+		font-size: .5rem;
+		color: #030310;
+	}
+	
+
+#content .categorie{
+	color: #A78A3C;
+	font-size: .5rem;
+	text-transform: uppercase;
+}
+	
+	.grid-item { 
+width: 20%; /*25*/ /* 16 pour 5 */
+  margin-bottom: 2%;
+   margin-top: 2%;
+}
+
+
+.grid{
+	/*margin-top: 50px;*/
+	margin-top: 1%; /* 4% */
+}
+
+.gutter-sizer { 
+width: 6%; 
+}
+
+
+@media only screen and (max-width: 992px){
+	.grid-sizer, .grid-item{
+		width: 30%; /*33*/
+		 margin-bottom: 5%;
+	}
+	.gutter-sizer { 
+width: 5%; 
+}
+
+
+}
+
+@media only screen and (max-width:576px){
+	.grid-sizer, .grid-item{
+		width: 48%; /*50*/
+	}
+	.gutter-sizer { 
+width: 4%; 
+}
+.itemcontent{
+	font-size: 1.2rem;
+}
+}
+
+@media only screen and (max-width:480px){
+	.grid-sizer, .grid-item{
+		width:  100%;
+	}
+	.itemcontent{
+	font-size: 1.4rem;
+}
+}
+
+	@media only screen and (max-width:992px){
+
+	#content{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+			#content header{
+
+			margin-top: 100px;
+
+	}
+	
+		#content header select{
+		margin-bottom : 1rem;
+		/*min-width: 30%;
+		max-width: 30%;*/
+
+	}
+	
+}

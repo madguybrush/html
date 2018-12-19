@@ -29,7 +29,10 @@ font-style: normal;
 font-weight: normal;
 }
 
-
+.trait{
+		width : 35px;
+height : 3px;
+}
 
 .navbar{
 
@@ -889,6 +892,8 @@ footer{
 		padding-right: 10%;
 		background-color: #F8F8F8;
 		width: 83%;
+		/*position: absolute;
+		bottom: 0;*/
 		/*min-height: 100%;*/
 		/*height: 10%;*/
 		font-size: 0.6rem;
@@ -922,7 +927,9 @@ footer{
 	@media only screen and (max-width:992px){
 	footer{
 		margin-left: 0;
+		margin-top: 1rem;
 		width: 100%;
+		text-align: center;
 	}
 	
 

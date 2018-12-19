@@ -52,7 +52,7 @@
 	
 	#produit .infosheader{
 		width: 100%;
-		padding-left: .5rem;
+		/*padding-left: .5rem;*/
 		/*margin-bottom: 50px;*/
 		align-items : flex-end;
 	/*	margin-top: 33%;*/
@@ -88,7 +88,7 @@ color : white;
 	}
 	
 #produit .infoscontent{
-		padding-left: .5rem;
+		/*padding-left: .5rem;*/
 		align-items : flex-start;
 			width: 100%;
 			padding-bottom: 4rem;
@@ -133,8 +133,27 @@ color : white;
 	width: 100%;
 	/*min-width: 200px;*/ /* 100%;*/
 	-webkit-appearance: button-bevel;
+	-webkit-appearance: button-bevel;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
 }
 
+.cta:hover{
+	background-color: white;
+	color: #A78A3C ;
+	-webkit-appearance: button-bevel;
+	-webkit-appearance: button-bevel;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+		border: 2px solid #A78A3C ;
+		-webkit-appearance: button;
+}
 
 .prix{
 	font-size: 0.9rem;
@@ -163,7 +182,28 @@ color : white;
 	padding: 1rem;
 	width: 100%;
 	-webkit-appearance: button-bevel;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
 }
+
+.download:hover{
+	background-color: white;
+		margin-top: 15px;
+	color: #000946;
+	font-size: 0.7rem;
+	/*padding: .8rem;*/
+-webkit-appearance: button;
+	border: 2px solid #000946;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+}
+
 
 
 .downloadall{
@@ -174,8 +214,26 @@ color : white;
 	font-size: 0.7rem;
 	padding: 1rem;
 	width: 100%;
-	/*-webkit-appearance: button-bevel;*//
+	/*-webkit-appearance: button-bevel;*/
+				transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
 }
+.downloadall:hover{
+	background-color:#000946;
+
+		margin-top: 15px;
+	color: white;
+
+	transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+}
+
 
 .colgauche h4{
 	font-size: 0.9rem;
@@ -231,10 +289,7 @@ text-align: left;
 	
 }
 
-.trait{
-		width : 35px;
-height : 3px;
-}
+
 
 .resume{
 	font-family: 'Lora', serif;
@@ -296,6 +351,10 @@ height : 3px;
 	max-width: 100%;
 }
 
+		.colbuttons{
+		padding-top:2rem;
+	}
+
 /**************responsive*******************/
 
 	/*@media only screen and (max-width:767.98px){*/
@@ -310,7 +369,7 @@ height : 3px;
 
 	
 .download, .downloadall{
-	width: 25%;
+	/*width: 25%;*/
 	margin-right: .8rem;
 }
 	
@@ -318,7 +377,7 @@ height : 3px;
 	.colbuttons{
 		
 		width: 100%;
-		margin-top: 2rem;
+		/*margin-top: 2rem;*/
 		margin-bottom: 2rem;
 	}
 	
@@ -337,6 +396,25 @@ height : 3px;
 	
 	
 		@media only screen and (max-width:767.98px){
+	
+	
+	
+.prix{
+	text-align: center;
+	
+}
+
+.tableFilm{
+	font-size : 1rem;
+}
+
+.tableFilm .titre{
+	font-size : 1rem;
+}
+
+.tableFilm .acteurs{
+	font-size : 1rem;
+}
 	
 
 	#produit header{
@@ -362,6 +440,10 @@ margin-bottom: .5rem;
 .coldroite{
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
+}
+
+.colgauche{
+	margin-bottom: 0;
 }
 
 	.colgauche h4{
