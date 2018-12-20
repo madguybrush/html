@@ -1,0 +1,231 @@
+	
+	/*****************CATEGORIE distrib****************/
+	
+	
+#boutique{
+		margin-left: 17%;
+		background-color: #FFF;
+		min-height: 85%;
+	}
+	
+#boutique header{
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
+		width: 100%;
+		color: #030310;
+		/*opacity: .5;*/
+	}
+	
+#boutique header select{
+		margin-right: 1rem;
+		min-width: 100%;
+		max-width: 100%;
+		font-family: Montserrat;
+		font-size: 11px;
+		opacity: .5;
+	}
+	
+#boutique header .selectdark{
+		color: white;
+		background-color: black;
+		opacity: 1;
+	}
+	
+#boutique .content{
+	/*padding-top: 1rem;*/
+	background-color: #F5F5F5;
+}
+	
+.alphabetical{
+	text-align: center;
+	margin-top: .8rem;
+	letter-spacing: .12rem;
+	opacity: .5;
+}
+	
+.alphabetical a{
+padding: .2rem;
+color: #030310;
+
+	}
+	
+	
+#boutique h2{
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		color: #A78A3C;
+	}
+	
+#boutique h2.nouveautes{
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: #A78A3C;
+		padding-left: 2rem;
+		letter-spacing: .15rem;
+		margin-top: .5rem;
+	}
+
+	
+#boutique .livres{
+		padding-top: 1.5rem;
+		padding-left: 2%;
+	}
+	
+#boutique .panier{
+		padding-top: 1.5rem;
+		background-color: white;
+		padding-right: 10%;
+		letter-spacing: .15rem;
+	}
+	
+	
+#boutique img{
+		max-width: 100%;
+		margin-bottom: 1rem;
+	}
+		
+#boutique h3{
+			font-family: Piek;
+		font-size: 1.1rem;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+#boutique h4{
+	font-family: Montserrat;
+	font-size: .7rem;
+	font-weight: bold;
+	color: #030310;
+	}
+	
+	#boutique h5{
+	font-family: Montserrat;
+	font-size: .8rem;
+	font-weight: bold;
+	color: #919191;
+	}
+	
+	#boutique .collection{
+
+	text-transform: uppercase;
+}
+	#boutique .categorieboutique{
+
+	text-transform: uppercase;
+}
+	
+#boutique .quatrieme{
+	font-family: Lora;
+	font-size: .9rem;
+	color: #030310;
+	padding-left: .5rem;
+	}
+	
+	#boutique .sommaire{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: .6rem;
+	color: #030310;
+	letter-spacing: .05rem;
+
+	}
+	
+/*
+#boutique .categorie{
+	color: #A78A3C;
+	font-size: .5rem;
+	text-transform: uppercase;
+}*/
+
+
+	.grid-item { 
+width: 48%; /*25*/ /* 16 pour 5 */
+  margin-bottom: 2%;
+   margin-top: 2%;
+   background-color: white;
+   padding: 1rem;
+}
+
+
+.grid{
+	/*margin-top: 50px;*/
+	margin-top: 1%; /* 4% */
+}
+
+.gutter-sizer { 
+width: 3%; 
+}
+
+
+@media only screen and (max-width: 992px){
+	.grid-sizer, .grid-item{
+		width: 99%; 
+		 margin-bottom: 5%;
+	}
+	.gutter-sizer { 
+width: 5%; 
+}
+
+
+}
+
+@media only screen and (max-width:576px){
+	.grid-sizer, .grid-item{
+		width: 48%; /*50*/
+	}
+	.gutter-sizer { 
+width: 4%; 
+}
+.itemcontent{
+	font-size: 1.2rem;
+}
+}
+
+@media only screen and (max-width:480px){
+	.grid-sizer, .grid-item{
+		width:  100%;
+	}
+	.itemcontent{
+	font-size: 1.4rem;
+}
+}
+
+	/*@media only screen and (max-width:767.98px){*/
+/*@media (max-width:767.98px){*/
+	@media only screen and (max-width:992px){
+
+	#boutique{
+		margin-left: 0;
+		width: 100%;
+	}
+	
+			#boutique header{
+
+			margin-top: 100px;
+
+	}
+	
+		#boutique header select{
+		margin-bottom : 1rem;
+	}
+	
+	#boutique .panier{
+	display: none;
+}
+	
+}
+
+@media only screen and (max-width:767.98px){
+
+#boutique .quatrieme{
+	font-size: 1.2rem;
+}
+
+#boutique .sommaire{
+	display: none;
+}
+
+
+}

@@ -2,7 +2,7 @@
 	/*****************CATEGORIE distrib****************/
 	
 	
-	#content{
+	#recherche{
 		margin-left: 17%;
 
 		background-color: #F5F5F5;
@@ -10,12 +10,8 @@
 		min-height: 85%;
 	}
 	
-	.padding10{
-				padding-left: 10%;
-		padding-right: 10%;
-	}
-	
-		#content header{
+
+		#recherche header{
 			/*background-color: #F5F5F5;*/
 			padding-top: 2.5rem;
 			margin-bottom: 1.5rem;
@@ -25,18 +21,18 @@
 	}
 	
 	
-	#content .content{
+	#recherche .content{
 	background-color: #FFF;
 	/*padding: 1rem;*/
 }
 
-#content h1.recherche{
+#recherche h1.recherche{
 	font-size: 1.2rem;
 	font-family: Montserrat;
 	
 }
 
-#content h1.recherche strong{
+#recherche h1.recherche strong{
 	font-size: 1.2rem;
 	color: black;
 	opacity: 1;
@@ -44,25 +40,25 @@
 }
 	
 	
-	#content h2{
+	#recherche h2{
 		font-family: Piek;
 		font-weight: bold;
 		color: #A78A3C;
 	}
 	
-		#content .films{
+		#recherche .films{
 		padding-top: 2rem;
 	}
 	
 
 	
-		#content img{
+		#recherche img{
 		max-width: 100%;
 		margin-bottom: 1rem;
 
 	}
 		
-		#content h3{
+		#recherche h3{
 			font-family: Piek;
 		text-align:center;
 		font-size: .8rem;
@@ -70,14 +66,14 @@
 		color: #A78A3C;
 	}
 	
-			#content h4{
+			#recherche h4{
 				font-family: Montserrat;
 		text-align:center;
 		font-size: .7rem;
 		font-weight: bold;
 		color: #030310;
 	}
-				#content h5{
+				#recherche h5{
 				font-family: Montserrat;
 		text-align:center;
 		font-size: .5rem;
@@ -85,7 +81,7 @@
 	}
 	
 
-#content .categorie{
+#recherche .categorie{
 	color: #A78A3C;
 	font-size: .5rem;
 	text-transform: uppercase;
@@ -143,18 +139,18 @@ width: 4%;
 
 	@media only screen and (max-width:992px){
 
-	#content{
+	#recherche{
 		margin-left: 0;
 		width: 100%;
 	}
 	
-			#content header{
+			#recherche header{
 
-			margin-top: 100px;
+			padding-top: 100px;
 
 	}
 	
-		#content header select{
+		#recherche header select{
 		margin-bottom : 1rem;
 		/*min-width: 30%;
 		max-width: 30%;*/
