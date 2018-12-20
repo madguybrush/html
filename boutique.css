@@ -73,11 +73,47 @@ color: #030310;
 		padding-left: 2%;
 	}
 	
-#boutique .panier{
-		padding-top: 1.5rem;
+#boutique .coldroiteboutique{
+		
 		background-color: white;
-		padding-right: 10%;
-		letter-spacing: .15rem;
+		/*padding-right: 10%;*/
+		padding: 0;
+		
+	}
+
+#boutique .panier{
+		padding: .5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	letter-spacing: .15rem;
+	color: rgba(145, 145, 145, 1);
+	font-size: 1rem;
+	/*line-height: 1.5rem;*/
+	}
+	
+	/*	#boutique .panier .cta{
+		text-align: center;
+	width: 80%;
+	
+	}*/
+	
+	#boutique .crosssells{
+		color: #A78A3C;
+		background-color: rgba(167, 138, 60, 0.15);
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;		
+		font-size : 1rem;
+		padding: .5rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+		#boutique .noir{
+		color: #000!important;
+	}
+	
+			#boutique .total{
+		padding-top: .5rem;
+		font-weight: bold;	
 	}
 	
 	
