@@ -170,10 +170,10 @@ width: 5%;
 
 
 }
-
+/*
 @media only screen and (max-width:576px){
 	.grid-sizer, .grid-item{
-		width: 48%; /*50*/
+		width: 48%; 
 	}
 	.gutter-sizer { 
 width: 4%; 
@@ -181,7 +181,7 @@ width: 4%;
 .itemcontent{
 	font-size: 1.2rem;
 }
-}
+}*/
 
 @media only screen and (max-width:480px){
 	.grid-sizer, .grid-item{
@@ -220,7 +220,7 @@ width: 4%;
 @media only screen and (max-width:767.98px){
 
 #boutique .quatrieme{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 #boutique .sommaire{

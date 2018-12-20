@@ -494,7 +494,9 @@ padding: 0;
 	width: 25px;
 }
 
-
+.panierbutton{
+	width: 25px;
+}
 
 .loupe {
   fill: #fff; 
