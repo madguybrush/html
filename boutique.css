@@ -53,7 +53,7 @@ color: #030310;
 #boutique h2{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		color: #A78A3C;
 	}
 	
@@ -63,7 +63,7 @@ color: #030310;
 		font-size: 1.2rem;
 		color: #A78A3C;
 		padding-left: 2rem;
-		letter-spacing: .15rem;
+		letter-spacing: .2rem;
 		margin-top: .5rem;
 	}
 
@@ -85,7 +85,7 @@ color: #030310;
 		padding: .5rem;
 	padding-top: 1.5rem;
 	padding-bottom: 1rem;
-	letter-spacing: .15rem;
+	letter-spacing: .2rem;
 	color: rgba(145, 145, 145, 1);
 	font-size: 1rem;
 	/*line-height: 1.5rem;*/
@@ -102,10 +102,11 @@ color: #030310;
 		background-color: rgba(167, 138, 60, 0.15);
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;		
-		font-size : 1rem;
+		font-size : .7rem;
 		padding: .5rem;
 		padding-bottom: 1rem;
 		padding-top: 1rem;
+		letter-spacing: .2rem;
 	}
 		#boutique .noir{
 		color: #000!important;
@@ -124,23 +125,25 @@ color: #030310;
 		
 #boutique h3{
 			font-family: Piek;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		font-weight: bold;
 		color: #A78A3C;
 	}
 	
 #boutique h4{
 	font-family: Montserrat;
-	font-size: .7rem;
+	font-size: .8rem;
 	font-weight: bold;
 	color: #030310;
+		letter-spacing: .08rem;
 	}
 	
 	#boutique h5{
 	font-family: Montserrat;
-	font-size: .8rem;
+	font-size: .7rem;
 	font-weight: bold;
 	color: #919191;
+	letter-spacing: .1rem;
 	}
 	
 	#boutique .collection{
@@ -247,7 +250,7 @@ width: 4%;
 		margin-bottom : 1rem;
 	}
 	
-	#boutique .panier{
+	#boutique .coldroiteboutique{
 	display: none;
 }
 	
