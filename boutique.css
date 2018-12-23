@@ -78,6 +78,7 @@ color: #030310;
 		background-color: white;
 		/*padding-right: 10%;*/
 		padding: 0;
+		margin: 0;
 		
 	}
 
@@ -88,6 +89,7 @@ color: #030310;
 	letter-spacing: .2rem;
 	color: rgba(145, 145, 145, 1);
 	font-size: 1rem;
+	margin: 0;
 	/*line-height: 1.5rem;*/
 	}
 	

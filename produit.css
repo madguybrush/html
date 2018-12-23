@@ -35,7 +35,7 @@
 			
 	
 .imgaffiche{
-	border: .3rem solid white; 
+	border: .3rem solid #f5f5f5; 
 	max-width: 100%;
 	margin-bottom: -70px;
 	width: 100%;
@@ -84,7 +84,8 @@ color : white;
 #produit .content{
 			display: flex;
 			overflow: hidden;
-	
+		/*	padding: 0;
+			margin: 0;*/
 	}
 	
 #produit .infoscontent{
@@ -111,6 +112,7 @@ color : white;
 	margin-bottom: 50px;
 	padding-left: 0rem; /*25px;*/
 	padding-right: 0rem; /*25px;*/
+	/*background-color: white;*/
 	/*height: 1000px;*/
 }
 
@@ -128,6 +130,8 @@ color : white;
 	font-size: 0.9rem;
 	padding-top: 3rem; /*2rem;*/
 	background-color: white;
+	padding-right: 3rem;
+	padding-left: 3rem;
 	
 }
 
@@ -225,7 +229,7 @@ margin: 0 auto;
 
 .tableFilm {
 	font-family: 'Lora', serif;
-	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 	text-align: left;
 	width: 100%; 
 	/*font-family: Lora, verdana;*/
@@ -332,6 +336,17 @@ text-align: left;
 		.colbuttons{
 		padding-top:2rem;
 	}
+	
+	
+		.prix2{
+		text-align: right;
+	}
+	
+	
+		.showwhenmobile{
+		display: none;
+	}
+
 
 /**************responsive*******************/
 
@@ -339,7 +354,7 @@ text-align: left;
 		@media only screen and (max-width:992px){
 	#produit{
 		margin-left: 0;
-		margin-top:74px;
+		margin-top:64px;
 		width: 100%;
 	}
 
@@ -375,8 +390,15 @@ text-align: left;
 	
 		@media only screen and (max-width:767.98px){
 	
-	
-	
+	.hidewhenmobile{
+		display: none;
+	}
+	.showwhenmobile{
+		display: flex;
+		text-align: center;
+		margin-top: -5rem;
+	}
+
 .prix{
 	text-align: center;
 	
@@ -415,9 +437,14 @@ margin-bottom: .5rem;
 	color: #030310;
 
 }
+/*
 .coldroite{
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
+}*/
+
+.coldroite{
+	margin-top: 25px;
 }
 
 .colgauche{
@@ -431,6 +458,7 @@ margin-bottom: .5rem;
 	
 		.colbuttons{
 		text-align: center;
+		padding: 2rem;
 	}
 	
 	.tableFilm .colLeft{
@@ -438,8 +466,17 @@ margin-bottom: .5rem;
 	}
 	
 	
+		#produit .content{
+		margin: 0; /*1*/
+		padding: 0;
+		
+	}
+	.prix2{
+		text-align: center;
+	}
+	
 	#produit .infoscontent{
-		margin: 1rem;
+		margin: 0rem; /*1*/
 		
 	}
 	
@@ -471,7 +508,10 @@ margin-bottom: .5rem;
 
 	width: 50%;
 
-}
+	/*	margin-top: 7px!important;
+		margin-bottom: 15px;*/
+	}
+	
 		
 	
 		}

@@ -41,12 +41,15 @@ function hidemenumobile(){
 		$( '#brandmobile' ).css( 'opacity', '1' );
 		$( '.menumobile' ).css( 'background-color', 'rgba(0, 0, 0, 0.3)' );
 		modalState = 0;
+		$( '#modalmobile' ).removeClass("overflow");
+		$( 'html' ).css( 'overflow', 'auto' );
 		//console.log(modalState);
 		}
 		
 function displaymenumobile(){
 		
 		$( '#modalmobile' ).show();
+		
 		//$( "#modalmobile" ).addClass("slideInDown"); 
 		//$( '#modalmobile' ).addClass("is-on");
 		$( '.sidebar' ).addClass("on");
@@ -56,9 +59,15 @@ function displaymenumobile(){
 		//.delay( 800 ).fadeIn( 800 );
 		//$( ".sidebar" ).delay( 800 ).fadeIn( 800 );
 		$( '#modalmobile' ).css( 'opacity', '1' );
+		//$( 'html' ).addClass("overflow");
 		$( '#brandmobile' ).css( 'opacity', '0' );
 		$( '.menumobile' ).css( 'background-color', 'transparent' );
 		modalState = 1;
+		$( 'html' ).css( 'overflow', 'hidden' );
+			setTimeout(function () { 
+				$( '#modalmobile' ).addClass("overflow");
+			}, 1000);
+		//$( '#modalmobile' ).delay( 800 ).css( 'overflow', 'auto' );
 		//console.log(modalState);
 		
 
@@ -151,25 +160,31 @@ var $grid = $('.grid').isotope({
 	fitRows: {
 		gutter: '.gutter-sizer'
 	},
-	  // filter element with numbers greater than 50
-  
-
-
 	masonry: {
     // use element for option
     columnWidth: '.grid-sizer'
   }
 });
 
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+  console.log(' image loaded');
+});
+
+/*$grid.imagesLoaded().always( function() {
+console.log('all images loaded');
+  $grid.isotope('layout');
+});*/
+	
 
 
-/*
-  sameTitle: function() {
-    var titre = $(this).find('.titre').text();
-	console.log( titre );
-    return titre.match( );
-  }*/
-  
+// layout Isotope after each image loads
+/*$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});*/
+
+
   var filterFns = {
    sameTitle: function() {
     // _this_ is the item element. Get text of element's .number
@@ -218,16 +233,7 @@ var $grid = $('.grid').isotope({
 	//return parseInt( number, 10 ) > 50;
   }
   
-   /*    sameAlpha: function() {
 
-	var titre = $(this).find('.titre').text();
-	console.log( titre );
-	var firstletter = titre.slice(0,1);
-	console.log( firstletter );
-	var letter = this.value;
-	return firstletter === letter;
-
-  }*/
   };
 
 
@@ -374,5 +380,42 @@ $( ".selecttitre" ).change(function() {
 	});
 
 
+	
+	
+$(window).scroll(function(){
+	
+ //$('.navbar-collapse').removeClass('show');
+	
+if(( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) || (($(window).width() < 768))) {
+  if ($(window).scrollTop() > 55){	
+	 // $('.navbar').addClass('fixed-top');
+	  	 $('.menumobile').hide();
+		 //addClass('fadeInDown');
+	 // $('.navbar').removeClass('fadeInDownBig');
+	    }
+  else{
+	   $('.menumobile').show();
+	   //$('.navbar').removeClass('fixed-top');
+	   	//     $('.navbar').removeClass('fadeInDown');
+	    // $('.navbar').addClass('fadeInDownBig');
+
+  }
+}	
+
+});
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
    } )( jQuery );

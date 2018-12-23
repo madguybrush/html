@@ -18,41 +18,37 @@
 <!-- menu mobile -->
 <nav class="navbar fixed-top menumobile navbar-dark">
 
-<div class="container">
+	<div class="container">
 
+					<a id="brandmobile" class="navbar-brand" rel="home" href="index.html" title="Capricci" alt="Capricci" itemprop="url">
+						<img alt="logo Capricci" src="img/logomobile.png" class="logomobile">
+						<img alt="logo Capricci" src="img/logotablette.png"  class="logotablette">
 
-				<a id="brandmobile" class="navbar-brand" rel="home" href="http://testcapricci.fr/" title="Capricci" alt="Capricci" itemprop="url">
-					<img alt="logo Capricci" src="img/logomobile.png">
-				</a>
-				
-				
-				<div class="flexbuttons">
-				<button id="btnmenusearch" class="btn btnsearch" >  <!--type="submit" id="searchsubmit">   my-2 my-sm-0 -->
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
-						<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+					</a>
 					
-					<rect class="cross1" x="11" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="2" height="24"></rect>
-					<rect class="cross2" x="0" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="24" height="2"></rect>
-					</svg>
-				
+					<div class="flexbuttons">
+					
+						<button id="btnmenupanier" class="btn btnpaniermobile" >
+							<img src="img/panier-vide.svg" alt="panier" />	
+						</button>
+						
+						<button id="btnmenusearch" class="btn btnsearch" > 
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="searchbutton">
+								<path class="loupe" d="M20.7 22.4l-5.3-6.7c3.6-3.5 3.7-9.3.2-12.9S6.4-.9 2.8 2.6s-3.7 9.3-.2 12.9c3 3.1 7.7 3.6 11.3 1.4l5.3 6.7c.3.4 1 .5 1.4.2.4-.4.5-1 .1-1.4zM2.1 9.2c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7-7-3.1-7-7z"></path>
+								<rect class="cross1" x="11" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="2" height="24"></rect>
+								<rect class="cross2" x="0" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="24" height="2"></rect>
+							</svg>
+						</button>
+						
+						<button id="btnmenumobile" class="btn" type="button" > <!-- navbar-toggler-->
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+								<div class="bar3"></div>
+						</button>
+					
+					</div>
 
-				</button>
-				
-				<button id="btnmenumobile" class="btn" type="button" > <!-- navbar-toggler-->
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-				</button>
-				
-
-				
-				</div>
-				
-		
-
-
-</div>
-
+	</div>
 
 </nav>
 
@@ -256,7 +252,7 @@
 
 			<div class="flex-container ">
 
-				<div class="layer flex-item animated fadeIn" >
+				<div class="layer flex-item animated fadeIn flextexte" >
 					<!--<span class="tag">PROCHAINEMENT    </span>-->
 					<h1>LE JOUR D’APRèS</h1>
 					<h2>un film de Hong SANGSOO</h2>
@@ -264,7 +260,7 @@
 					<a href="" alt=""><img alt="en savoir plus" src="img/plus-sign-button.svg" class="plusbutton"></a>
 					
 				</div>
-				<div class="layerimg flex-item animated fadeIn">
+				<div class="layerimg flex-item animated fadeIn fleximage">
 					<img alt="logo Capricci" src="img/DVD-Jaquette-3D-JOUR-APRES.png" class="fleximg">
 				</div>
 			</div>
@@ -277,7 +273,7 @@
 
 			<div class="flex-container animated fadeInUp ">
 	
-				<div class="intro flex-item">
+				<div class="intro flex-item flextexte">
 					<h1>AFTER MY DEATH</h1>
 					<h2>un film de UI-SEOK Kim</h2>
 					<h3>EN SALLE LE 22 NOVEMBRE 2018</h3>
@@ -286,9 +282,9 @@
 				</div>
 		
 		
-				<div class="flex-item ">
-					<img alt="logo Capricci" src="img/entrevues.png" class="fleximg">
-					<img alt="logo Capricci" src="img/cannes.png" class="fleximg">
+				<div class="flex-item fleximage ">
+					<img alt="logo entrevues" src="img/entrevues.png" class="fleximg">
+					<img alt="logo cannes" src="img/cannes.png" class="fleximg">
 				</div>
 	
 			</div>	
@@ -301,7 +297,7 @@
 	
 			<div class="flex-container animated fadeIn">
 	
-				<div class="intro flex-item">
+				<div class="intro flex-item flextexte">
 					<h1>ISABELLE HUPERT</h1>
 					<h2>VIVRE NE VOUS REGARDE PAS <br />un livre de Murielle JOUDET</h2>
 					<h3>EN LIBRAIRIE LE 15 SEPTEMBRE 2018</h3>
@@ -309,7 +305,7 @@
 				</div>
 		
 		
-				<div class="flex-item ">
+				<div class="flex-item fleximage">
 					<img alt="logo Capricci" src="img/PremiereCollection-Jaquette-3D-HUPPERT.png" class="fleximg">
 				</div>
 	
@@ -318,7 +314,7 @@
 	
 	<div class="section" id="section3" style="background-image: url(img/fond-BadLieutenant.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="flex-container animated fadeInUp slower">
-			<div class="intro flex-item">
+			<div class="intro flex-item flextexte">
 					<!--<span class="tag">PROCHAINEMENT	</span>-->
 				<h1>BAD LIEUTENANT</h1>
 				<h2>un film de Abel FERRARA</h2>

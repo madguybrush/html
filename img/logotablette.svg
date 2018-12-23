@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444.265 56">
+  <defs>
+    <style>
+	
+	@font-face {
+font-family: Piek;
+src: url('../fonts/Piek-Reg.otf');
+font-style: normal;
+font-weight: normal;
+}
+	
+      .cls-1 {
+        fill: #fff;
+        font-size: 56px;
+        font-family: Piek;
+      }
+
+      .cls-2 {
+        fill: #a78a3c;
+        font-size: 15px;
+        font-family: Piek-Bold, Piek;
+        font-weight: 700;
+        letter-spacing: 0.015em;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_325" data-name="Groupe 325" transform="translate(-28.998 -7.5)">
+    <g id="Groupe_306" data-name="Groupe 306" transform="translate(28.998 7.5)">
+      <text id="capricci" class="cls-1" transform="translate(0 41)"><tspan x="0" y="0">capricci</tspan></text>
+    </g>
+    <text id="Producteur_distributeur_et_éditeur_de_cinéma" data-name="Producteur, distributeur
+et éditeur de cinéma" class="cls-2" transform="translate(269.263 19.89)"><tspan x="0" y="11">Producteur, distributeur</tspan><tspan x="0" y="29">et éditeur de cinéma</tspan></text>
+  </g>
+</svg>

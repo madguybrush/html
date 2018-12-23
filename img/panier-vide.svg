@@ -1,21 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 62 62">
-	<defs>
-		<style>.a{fill:#fff;}.b{fill:none;stroke:#030310;stroke-miterlimit:10;}.c{filter:url(#a);}</style>
-		<filter id="a" x="0" y="0" width="62" height="62" filterUnits="userSpaceOnUse">
-		<feOffset input="SourceAlpha"/>
-		<feGaussianBlur stdDeviation="2" result="b"/>
-		<feFlood flood-opacity="0.502"/>
-		<feComposite operator="in" in2="b"/>
-		<feComposite in="SourceGraphic"/>
-		</filter>
-	</defs>
-	<g transform="translate(-604.17 -13)">
-		<g transform="translate(620 28.117)">
-			<g class="c" transform="matrix(1, 0, 0, 1, -15.83, -15.12)">
-				<circle class="a" cx="25" cy="25" r="25" transform="translate(6 6)"/>
-			</g>
-			<path class="b" d="M24.359,35.332H6.945a2.517,2.517,0,0,1-2.6-1.948L2.279,19.643a2.4,2.4,0,0,1,2.6-2.543H26.366a2.4,2.4,0,0,1,2.6,2.543L26.909,33.384A2.455,2.455,0,0,1,24.359,35.332Z" transform="translate(-0.333 -7.245)"/>
-			<path class="b" d="M27.862,10.471,27.376,7.3a5.7,5.7,0,0,0-5.563-4.8H18.249a5.647,5.647,0,0,0-5.563,4.8L12.2,10.471" transform="translate(-4.848 -0.617)"/>
-		</g>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.34 30.721">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="buy-cartBLANC" transform="translate(0.505 0.5)">
+    <path id="Tracé_74" data-name="Tracé 74" class="cls-1" d="M27.327,37.779H7.574A2.855,2.855,0,0,1,4.621,35.57L2.283,19.984A2.722,2.722,0,0,1,5.236,17.1H29.6a2.722,2.722,0,0,1,2.954,2.884L30.219,35.57A2.785,2.785,0,0,1,27.327,37.779Z" transform="translate(-2.255 -8.059)"/>
+    <path id="Tracé_75" data-name="Tracé 75" class="cls-1" d="M29.965,11.541,29.413,7.95A6.462,6.462,0,0,0,23.1,2.5H19.061a6.406,6.406,0,0,0-6.31,5.45L12.2,11.541" transform="translate(-6.041 -2.5)"/>
+  </g>
 </svg>
