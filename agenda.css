@@ -68,7 +68,6 @@
 	color: #A78A3C;
 	padding-top: 2rem;
 	letter-spacing: .2rem;
-	background-color: #f5f5f5;
 }
 
 #agenda .form-control{
@@ -144,6 +143,11 @@
 	#agenda h1, #agenda h2, #agenda h3, #agenda p{
 	padding-right: 2rem;
 	padding-left: 2rem;
+}
+
+#agenda .newslettertitle{
+
+	background-color: #f5f5f5;
 }
 
 		}
