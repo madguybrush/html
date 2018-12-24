@@ -41,7 +41,8 @@ function hidemenumobile(){
 		$( '#brandmobile' ).css( 'opacity', '1' );
 		$( '.menumobile' ).css( 'background-color', 'rgba(0, 0, 0, 0.3)' );
 		modalState = 0;
-		$( '#modalmobile' ).removeClass("overflow");
+		/*$( '#modalmobile' ).removeClass("overflow");*/
+		$( '#modalmobile' ).css( 'overflow', 'hidden' );
 		$( 'html' ).css( 'overflow', 'auto' );
 		//console.log(modalState);
 		}
@@ -49,15 +50,11 @@ function hidemenumobile(){
 function displaymenumobile(){
 		
 		$( '#modalmobile' ).show();
-		
-		//$( "#modalmobile" ).addClass("slideInDown"); 
-		//$( '#modalmobile' ).addClass("is-on");
+
 		$( '.sidebar' ).addClass("on");
 		//$( ".sidebar" ).slideDown( 1000 ); 
 		$( ".sidebar" ).addClass("slideInDown"); 
 		$( ".menuBasmobile" ).addClass("slideInUp"); 
-		//.delay( 800 ).fadeIn( 800 );
-		//$( ".sidebar" ).delay( 800 ).fadeIn( 800 );
 		$( '#modalmobile' ).css( 'opacity', '1' );
 		//$( 'html' ).addClass("overflow");
 		$( '#brandmobile' ).css( 'opacity', '0' );
@@ -65,11 +62,9 @@ function displaymenumobile(){
 		modalState = 1;
 		$( 'html' ).css( 'overflow', 'hidden' );
 			setTimeout(function () { 
-				$( '#modalmobile' ).addClass("overflow");
+				$( '#modalmobile' ).css( 'overflow', 'auto' );
+				//$( '#modalmobile' ).addClass("overflow");
 			}, 1000);
-		//$( '#modalmobile' ).delay( 800 ).css( 'overflow', 'auto' );
-		//console.log(modalState);
-		
 
 	}
 
@@ -104,6 +99,7 @@ function displaymenumobile(){
 		$( '.sidebar' ).removeClass("on");
 		$( '#modalsearch' ).css( 'opacity', '0' );
 		$( '#brandmobile' ).css( 'opacity', '1' );
+		$( 'html' ).css( 'overflow', 'auto' );
 		modalState = 0;
 		}
 		
@@ -122,6 +118,7 @@ function displaysearchmobile(){
 		$( '#modalsearch' ).show();
 		$( '#modalsearch' ).css( 'opacity', '1' );
 		$( '#brandmobile' ).css( 'opacity', '0' );
+		$( 'html' ).css( 'overflow', 'hidden' );
 		modalState = 2;
 		//console.log(modalState);
 	}
@@ -388,10 +385,13 @@ $(window).scroll(function(){
 	
 if(( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) || (($(window).width() < 768))) {
   if ($(window).scrollTop() > 55){	
+  
+	if (modalState === 0){
 	 // $('.navbar').addClass('fixed-top');
 	  	 $('.menumobile').hide();
 		 //addClass('fadeInDown');
 	 // $('.navbar').removeClass('fadeInDownBig');
+	}
 	    }
   else{
 	   $('.menumobile').show();

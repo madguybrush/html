@@ -17,7 +17,7 @@
 			padding-bottom: 1rem;
 			width: 100%;
 					color: #030310;
-		opacity: .5;
+		/*opacity: .5;*/
 	}
 	
 	#category header select{
@@ -26,7 +26,7 @@
 		max-width: 100%;
 		font-family: Montserrat;
 		font-size: 11px;
-
+opacity: .5;
 	}
 	
 		#category .content{
@@ -35,17 +35,7 @@
 	/*padding: 1rem;*/
 }
 	
-	.alphabetical{
-		text-align: center;
-		margin-top: .8rem;
-		letter-spacing: .12rem;
-	}
-	
-		.alphabetical a{
-/*padding: .2rem;*/
-color: #030310;
 
-	}
 	
 	
 	#category h2{
@@ -76,6 +66,7 @@ color: #030310;
 		font-size: 1.1rem;
 		font-weight: bold;
 		color: #A78A3C;
+		padding-top: .3rem;
 	}
 	
 			#category h4{
@@ -195,9 +186,11 @@ width: 6%;
 
 @media only screen and (max-width: 992px){
 	.grid-sizer, .grid-item{
-		width: 30%; /*33*/
+		/*width: 30%;*/ /*33*/
+		width: calc(30% - 10px);
 		 margin-bottom: 5%;
 	}
+	
 	.gutter-sizer { 
 width: 5%; 
 }
@@ -207,7 +200,8 @@ width: 5%;
 
 @media only screen and (max-width:576px){
 	.grid-sizer, .grid-item{
-		width: 48%; /*50*/
+		/*width: 48%;*/ /*50*/
+		width: calc(48% - 10px);
 	}
 	.gutter-sizer { 
 width: 4%; 
@@ -219,7 +213,8 @@ width: 4%;
 
 @media only screen and (max-width:480px){
 	.grid-sizer, .grid-item{
-		width:  100%;
+		/*width:  100%;*/
+		width: calc(100% - 10px);
 	}
 	.itemcontent{
 	font-size: 1.4rem;
@@ -247,5 +242,19 @@ width: 4%;
 		max-width: 30%;*/
 
 	}
+	
+}
+
+	@media only screen and (max-width:767.98px){
+
+
+	
+			#category header{
+
+			margin-top: 80px;
+
+	}
+	
+
 	
 }

@@ -23,6 +23,7 @@
 		#produit header{
 			/*margin-bottom: 1.5rem;*/
 			color: #030310;
+			padding: 0;
 		height: 66vh;
 		display: flex;
 		width: 100%;
@@ -84,6 +85,7 @@ color : white;
 #produit .content{
 			display: flex;
 			overflow: hidden;
+			padding: 0;
 		/*	padding: 0;
 			margin: 0;*/
 	}
@@ -92,7 +94,7 @@ color : white;
 		/*padding-left: .5rem;*/
 		align-items : flex-start;
 			width: 100%;
-			padding-bottom: 4rem;
+			/*padding-bottom: 4rem;*/
 	}
 
 .colgauche{
@@ -127,17 +129,21 @@ color : white;
 
 
 .prix{
-	font-size: 0.9rem;
+	font-size: 0.7rem;
 	padding-top: 3rem; /*2rem;*/
 	background-color: white;
 	padding-right: 3rem;
 	padding-left: 3rem;
+	letter-spacing: .08rem;
 	
 }
 
 .cadreblanc{
 	background-color: white;
-	padding: 2rem;	
+		padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
 .cadregris{
@@ -262,34 +268,34 @@ margin: 0 auto;
 	width: 50%; 
 text-align: left;
 	padding: .3rem;
-	
+	font-family: Lora, sans-serif;
 }
 
 
 
 .resume{
 	font-family: 'Lora', serif;
-	font-size: .9rem;
+	font-size: .8rem;
 	font-weight: 300;
 	/*margin-top: 1rem;*/
 	letter-spacing: .08rem;
 	line-height: 1.7rem;
-	padding-left: 5rem;
-	padding-right: 5rem;
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	background-color: white;
 }
 .lauteur{
 	font-family: 'Lora', serif;
-	font-size: .9rem;
+	font-size: .8rem;
 	font-weight: 300;
 	font-style: italic;
 	/*margin-top: 1rem;*/
-	padding-left: 5rem;
-	padding-right: 5rem;
-		padding-top: 4rem;
-	padding-bottom: 4rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+		padding-top: 3rem;
+	padding-bottom: 3rem;
 		letter-spacing: .08rem;
 	line-height: 1.7rem;
 
@@ -326,7 +332,7 @@ text-align: left;
 
 .gallery {
 	padding: 0;
-	padding-top: 1.5rem;
+	padding-top: 3rem;
 }
 
 .gallery img{
@@ -347,6 +353,27 @@ text-align: left;
 		display: none;
 	}
 
+	.carousel-control-next-icon{
+		background-image: url(img/diaporamaflechedroite.svg);
+		height: 40px;
+		width: 40px;
+	}
+	
+	.carousel-control-prev-icon{
+		background-image: url(img/diaporamaflechegauche.svg);
+		height: 40px;
+		width: 40px;
+	}
+	
+	.carousel-control-next, .carousel-control-prev{
+		width: 5%;
+	}
+	
+	#produit footer{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+	}
 
 /**************responsive*******************/
 

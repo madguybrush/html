@@ -734,6 +734,22 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 		display: block;
 		height: 62px;
 	}
+	
+	
+	
+	.alphabetical{
+	text-align: center;
+	margin-top: .8rem;
+	letter-spacing: .12rem;
+	opacity: .5;
+}
+	
+.alphabetical a{
+padding: .2rem;
+color: #030310;
+
+	}
+	
 
 	/**************************responsive***********************/
 	
@@ -949,11 +965,11 @@ height: 25px;
 	 max-width: 90%;
 	 z-index: 4;
 }
-
+/*
 .plusbutton{
 	width: 50px;
 	height: 50px;
-}
+}*/
 
 	
 .tag {
@@ -982,7 +998,8 @@ height: 25px;
 	}
 
 	.intro h1, .layer h1{
-	font-size: 1.5rem;
+	font-size: 1.7rem;
+	text-shadow: -1px 2px #040415;
 	}
 	
 	.intro h2, .layer h2{
@@ -1030,6 +1047,21 @@ height: 25px;
 	max-height: 50px;
 }
 	
+	
+	.btnsearch{
+
+padding-left: .2rem;
+padding-right: .2rem;
+
+
+}
+/*
+	.padding10{
+				padding-left: 3%;
+		padding-right: 3%;
+	}*/
+
+
 }
 	
 	

@@ -28,7 +28,7 @@
 #boutique header .selectdark{
 		color: white;
 		background-color: black;
-		opacity: 1;
+		opacity: 1!important;
 	}
 	
 #boutique .content{
@@ -36,19 +36,7 @@
 	background-color: #F5F5F5;
 }
 	
-.alphabetical{
-	text-align: center;
-	margin-top: .8rem;
-	letter-spacing: .12rem;
-	opacity: .5;
-}
-	
-.alphabetical a{
-padding: .2rem;
-color: #030310;
 
-	}
-	
 	
 #boutique h2{
 		font-family: Montserrat, sans-serif;
@@ -159,15 +147,16 @@ color: #030310;
 	
 #boutique .quatrieme{
 	font-family: Lora;
-	font-size: .9rem;
+	font-size: .8rem;
 	color: #030310;
 	padding-left: .5rem;
+	letter-spacing: .025rem;
 	}
 	
 	#boutique .sommaire{
 	font-family: Montserrat;
 	font-weight: bold;
-	font-size: .6rem;
+	font-size: .5rem;
 	color: #030310;
 	letter-spacing: .05rem;
 
