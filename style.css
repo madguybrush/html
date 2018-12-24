@@ -4,6 +4,12 @@
 	font-family: Montserrat, Verdana, sans-serif;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html{
 
 	overflow: auto;
@@ -745,7 +751,7 @@ transition: transform 1.5s cubic-bezier(.23,1,.32,1),opacity .75s linear;
 }
 	
 .alphabetical a{
-padding: .2rem;
+/*padding: .2rem;*/
 color: #030310;
 
 	}

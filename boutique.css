@@ -92,8 +92,9 @@
 		background-color: rgba(167, 138, 60, 0.15);
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;		
-		font-size : .7rem;
-		padding: .5rem;
+		font-size : .6rem;
+		padding: .1rem;
+		text-align: center;
 		padding-bottom: 1rem;
 		padding-top: 1rem;
 		letter-spacing: .2rem;
