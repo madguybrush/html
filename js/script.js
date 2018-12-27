@@ -235,7 +235,22 @@ $( document ).ready( function() {
 	
 	
 
-// init Isotope
+// init Isotope boutique
+var $gridboutique = $('.gridboutique').isotope({
+   itemSelector: '.grid-item',
+	//layoutMode: 'fitRows',
+    percentPosition: true,
+	//fitRows: {
+	//	gutter: '.gutter-sizer'
+//	},
+	masonry: {
+    // use element for option
+    columnWidth: '.grid-sizer',
+	  gutter: '.gutter-sizer'
+  }
+});
+
+// init Isotope 
 var $grid = $('.grid').isotope({
    itemSelector: '.grid-item',
 	layoutMode: 'fitRows',
@@ -243,11 +258,13 @@ var $grid = $('.grid').isotope({
 	fitRows: {
 		gutter: '.gutter-sizer'
 	},
-	masonry: {
+	//masonry: {
     // use element for option
-    columnWidth: '.grid-sizer'
-  }
+   // columnWidth: '.grid-sizer',
+	//  gutter: '.gutter-sizer'
+  //}
 });
+
 
 // layout Isotope after each image loads
 $grid.imagesLoaded().progress( function() {
@@ -326,6 +343,7 @@ $('.selecttitre').on( 'change', function() {
   //console.log( filterValue );
   filterValue = filterFns[ filterValue ] || filterValue;
   $grid.isotope({ filter: filterValue });
+  $gridboutique.isotope({ filter: filterValue });
 });
 
 $('.selectauteur').on( 'change', function() {
@@ -334,6 +352,7 @@ $('.selectauteur').on( 'change', function() {
   //console.log( filterValue );
   filterValue = filterFns[ filterValue ] || filterValue;
   $grid.isotope({ filter: filterValue });
+   $gridboutique.isotope({ filter: filterValue });
   
 });
 
@@ -379,7 +398,8 @@ $('.selectcollection').on( 'change', function() {
   var filterValue = this.value;
   console.log( filterValue );
   filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
+  /*$grid.isotope({ filter: filterValue });*/
+   $gridboutique.isotope({ filter: filterValue });
   
 });
 

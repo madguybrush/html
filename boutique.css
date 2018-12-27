@@ -37,15 +37,15 @@
 }
 	
 
-	
+	/*
 #boutique h2{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
 		font-size: 1.3rem;
 		color: #A78A3C;
-	}
+	}*/
 	
-#boutique h2.nouveautes{
+#boutique h2{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
 		font-size: 1.2rem;
@@ -54,11 +54,35 @@
 		letter-spacing: .2rem;
 		margin-top: .5rem;
 	}
+	
+	#boutique h2.panier{
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: #A78A3C;
+		padding-left: 0;
+	
+	}
+	
+	#boutique .nouveautes{
+		
+		background-color: #A78A3C;
+	}
+	
+	#boutique .nouveautes h2{
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: #fff;
+		padding-left: 2rem;
+		letter-spacing: .2rem;
+		margin-top: .5rem;
+	}
 
 	
 #boutique .livres{
 		padding-top: 1.5rem;
-		padding-left: 2%;
+		/*padding-left: 2%;*/
 	}
 	
 #boutique .coldroiteboutique{
@@ -170,33 +194,35 @@
 	text-transform: uppercase;
 }*/
 
-
-	.grid-item { 
-width: 48%; /*25*/ /* 16 pour 5 */
-  margin-bottom: 2%;
-   margin-top: 2%;
+.grid-sizer{
+	width: 49%;
+}
+	 .grid-item { /* .grid-sizer, */
+width: 49%; /*25*/ /* 16 pour 5 */
+  margin-bottom: 1%;
+   margin-top: 1%;
    background-color: white;
    padding: 1rem;
 }
 
 
-.grid{
+.gridboutique{
 	/*margin-top: 50px;*/
 	margin-top: 1%; /* 4% */
 }
 
 .gutter-sizer { 
-width: 3%; 
+width: 2%; 
 }
 
 
 @media only screen and (max-width: 992px){
 	.grid-sizer, .grid-item{
-		width: 99%; 
+		width: 100%; 
 		 margin-bottom: 5%;
 	}
 	.gutter-sizer { 
-width: 5%; 
+width: 0%; 
 }
 
 
@@ -215,9 +241,9 @@ width: 4%;
 }*/
 
 @media only screen and (max-width:480px){
-	.grid-sizer, .grid-item{
+	/*.grid-sizer, .grid-item{
 		width:  100%;
-	}
+	}*/
 	.itemcontent{
 	font-size: 1.4rem;
 }
