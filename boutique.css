@@ -92,7 +92,7 @@
 	
 #boutique .nouveauteitem{
 	background-color: white;
-	margin: 15px;
+	margin-left: 15px;
 	padding: 1rem;
 }
 	
@@ -141,10 +141,11 @@
 		right: 15%;
 	/*	background-color:black;*/
 		height: 100px;
-		width: 150px; 
-		box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
-		-webkit-box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
-		-moz-box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		width: 90px; 
+		/*box-shadow: -90px 0 90px -90px rgba(3, 3, 16, 0.3) inset;
+		-webkit-box-shadow: -90px 0 90px -90px rgba(3, 3, 16, 0.3) inset;
+		-moz-box-shadow: -90px 0 90px -90px rgba(3, 3, 16, 0.3) inset; */
+		background-image: linear-gradient(to left, rgba(3, 3, 16, 0.3), rgba(3, 3, 16, 0));
 		
 }
 	#boutique .navdroiteboutique .fleche{
@@ -162,10 +163,11 @@
 		left: 17%;
 	/*	background-color:black;*/
 		height: 100px;
-		width: 150px; 
-		box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
-		-webkit-box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
-		-moz-box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		width: 90px; 
+		/*box-shadow: 90px 0 90px -90px rgba(3, 3, 16, 0.3) inset;
+		-webkit-box-shadow: 90px 0 90px -90px rgba(3, 3, 16, 0.3) inset;
+		-moz-box-shadow: 90px 0 90px -90px rgba(3, 3, 16, 0.3) inset;*/
+		background-image: linear-gradient(to right, rgba(3, 3, 16, 0.3), rgba(3, 3, 16, 0));
 		
 }
 	#boutique .navgaucheboutique .fleche{
@@ -228,7 +230,7 @@
 	
 #boutique img{
 		max-width: 100%;
-		margin-bottom: 1rem;
+		margin-bottom: .5rem;
 	}
 		
 #boutique h3{

@@ -245,8 +245,8 @@ function displaysearchmobile(){
 	//marginleftnouveautenb = parseInt(marginleftnouveaute, 10);
 	//console.log("resized marginleft: ");
 	//console.log(marginleftnouveautenb);
-	$( ".control-prev-nouveaute" ).addClass("d-none");
-	$( ".control-next-nouveaute" ).removeClass("d-none"); 	 	
+	$( ".navgaucheboutique" ).addClass("d-none");
+	$( ".navdroiteboutique" ).removeClass("d-none"); 	 	
 	counterRight = 0;
 	counterLeft = 0;
 	isreset = 1;
@@ -299,10 +299,10 @@ $( document ).ready( function() {
 		counterRight += 1;
 		counterLeft -= 1;
 		if (counterRight >= 1){
-			$( ".control-prev-nouveaute" ).removeClass("d-none"); 
+			$( ".navgaucheboutique" ).removeClass("d-none"); 
 		}
 		if (counterRight >= 3){
-			$( ".control-next-nouveaute" ).addClass("d-none"); 
+			$( ".navdroiteboutique" ).addClass("d-none"); 
 		}
 		
 });
@@ -323,10 +323,10 @@ $( document ).ready( function() {
 		counterRight -= 1;
 		counterLeft += 1;
 		if (counterLeft >= -2){
-			$( ".control-next-nouveaute" ).removeClass("d-none"); 
+			$( ".navdroiteboutique" ).removeClass("d-none"); 
 		}
 		if (counterLeft >= 0){
-			$( ".control-prev-nouveaute" ).addClass("d-none"); 
+			$( ".navgaucheboutique" ).addClass("d-none"); 
 		}
 		
 });
