@@ -3,7 +3,7 @@
 	
 	
 #boutique{
-		margin-left: 17%;
+		/*margin-left: 17%;*/
 		background-color: #FFF;
 		min-height: 85%;
 	}
@@ -11,9 +11,15 @@
 #boutique header{
 		padding-top: 1.5rem;
 		padding-bottom: 1rem;
-		width: 100%;
+		margin-left: 17%;
+		width: 83%;
 		color: #030310;
+		z-index: 5;
 		/*opacity: .5;*/
+	}
+	
+	.selectrow, .alpharow{
+		z-index: 5;
 	}
 	
 #boutique header select{
@@ -23,6 +29,8 @@
 		font-family: Montserrat;
 		font-size: 11px;
 		opacity: .5;
+		z-index: 5;
+		position: relative;
 	}
 	
 #boutique header .selectdark{
@@ -34,9 +42,27 @@
 #boutique .content{
 	/*padding-top: 1rem;*/
 	background-color: #F5F5F5;
+			margin-left: 17%;
+		width: 68%;
+		margin-right: 15%;
 }
 	
-
+#boutique .contentnouveautes{
+	/*padding-top: 1rem;*/
+	background-color: #A78A3C;
+	/*background-color: #F5F5F5;*/
+			margin-left: 17%;
+		width: 166%;  /*83%*/
+		padding-bottom: 1.5rem;
+		padding-left: 15px;
+		overflow:hidden;
+			transition: all .3s ease-out;
+    -webkit-transition:all .3s ease-out;
+    -o-transition:all .3s ease-out;
+    -moz-transition:all .3s ease-out;
+    -ms-transition:all .3s ease-out;
+		/* box-shadow: 150px 0 15px -15px inset rgba(0, 0, 0, 0.5);*/
+}
 	/*
 #boutique h2{
 		font-family: Montserrat, sans-serif;
@@ -64,10 +90,11 @@
 	
 	}
 	
-	#boutique .nouveautes{
-		
-		background-color: #A78A3C;
-	}
+#boutique .nouveauteitem{
+	background-color: white;
+	margin: 15px;
+	padding: 1rem;
+}
 	
 	#boutique .nouveautes h2{
 		font-family: Montserrat, sans-serif;
@@ -84,15 +111,81 @@
 		padding-top: 1.5rem;
 		/*padding-left: 2%;*/
 	}
-	
+/*	
 #boutique .coldroiteboutique{
-		
 		background-color: white;
-		/*padding-right: 10%;*/
 		padding: 0;
 		margin: 0;
+	}*/
+	
+#boutique .coldroiteboutique{
+		background-color: white;
+		padding: 0;
+		margin: 0;
+		position: absolute; /* fixed ? */
+		top: 100px;
+		right: 0;
+		width: 15%;
+		height: 100%;
+		/*padding-top: 100px;*/
+		/*box-shadow: -20px 20px 200px #666;*/
+		/*box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, -12px 0 150px -4px rgba(0, 0, 0, 0.5), -12px 0 150px -4px rgba(0, 0, 0, 0.5);*/
+		/*box-shadow: -15px 0 15px -15px inset;*/
+	}	
+	
+	
+#boutique .navdroiteboutique{
+	
+	position: absolute; /* fixed ? */
+		top: 100px;
+		right: 15%;
+	/*	background-color:black;*/
+		height: 100px;
+		width: 150px; 
+		box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		-webkit-box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		-moz-box-shadow: -150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
 		
-	}
+}
+	#boutique .navdroiteboutique .fleche{
+		position: absolute;
+		right: 5px;
+		height: 30px;
+		width: 30px; 
+		/*background-image: url(img/diaporamaflechedroite.svg);*/
+}
+
+#boutique .navgaucheboutique{
+	
+	position: absolute; /* fixed ? */
+		top: 100px;
+		left: 17%;
+	/*	background-color:black;*/
+		height: 100px;
+		width: 150px; 
+		box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		-webkit-box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		-moz-box-shadow: 150px 0 150px -150px rgba(0, 0, 0, 0.5) inset;
+		
+}
+	#boutique .navgaucheboutique .fleche{
+		position: absolute;
+		left: 5px;
+		height: 30px;
+		width: 30px; 
+		/*background-image: url(img/diaporamaflechedroite.svg);*/
+}
+	
+	/*#boutique .coldroiteboutique:before{
+	  box-shadow: -15px 0 15px -15px inset rgba(0, 0, 0, 0.5);
+  content: " ";
+  height: 100%;
+  left: -15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  
+  }*/
 
 #boutique .panier{
 		padding: .5rem;
@@ -259,8 +352,10 @@ width: 4%;
 	}
 	
 			#boutique header{
-
+			width: 100%;
 			margin-top: 100px;
+			margin-left:0;
+			margin-right:0;
 
 	}
 	
@@ -268,10 +363,21 @@ width: 4%;
 		margin-bottom : 1rem;
 	}
 	
-	#boutique .coldroiteboutique{
+	#boutique .coldroiteboutique, #boutique .navdroiteboutique, #boutique .navgaucheboutique{
 	display: none;
 }
-	
+
+			#boutique .content{
+			width: 100%;
+			margin-left:0;
+			margin-right:0;
+			}
+	#boutique .contentnouveautes{
+			width: 100%;
+			margin-left:0;
+			margin-right:0;
+			display: none;
+			}
 }
 
 @media only screen and (max-width:767.98px){
