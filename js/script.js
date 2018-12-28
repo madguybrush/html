@@ -618,7 +618,13 @@ if(( isTouchDevice ) || (($(window).width() < 768))) {
 		$('.container-loader').addClass('d-none ');
 		$('.loader').addClass('d-none ');
 		
-	$('#capricci').css('opacity', '1');  
-		$('#capricci').removeClass('d-none');
+	//$('#capricci').css('opacity', '1');  
+		//$('#capricci').removeClass('d-none');
+		
+		///////HOMEPAGE//////////
+		$('.navbar').removeClass('d-none');
+		$('#fullpage').removeClass('d-none');
 		$('#fp-nav.fp-right').removeClass('d-none');
+		
+		$('#capricci').removeClass('d-none');
 });
