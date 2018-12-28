@@ -219,6 +219,7 @@ function displaysearchmobile(){
 		window_height = $( window ).height();
 		
 		hauteur = $( '.contentnouveautes' ).outerHeight();
+	 hauteur = hauteur + $( '.contentnouveautestitre' ).outerHeight();
 		fleche = (hauteur / 2) - 20;
 	$( '.navdroiteboutique' ).css( 'height', hauteur );
 	$( '.navgaucheboutique' ).css( 'height', hauteur );
@@ -268,6 +269,7 @@ $( document ).ready( function() {
 	isreset = 0;
 	
 	 hauteur = $( '.contentnouveautes' ).outerHeight();
+	 hauteur = hauteur + $( '.contentnouveautestitre' ).outerHeight();
 	 fleche = (hauteur / 2) - 20;
 	$( '.navdroiteboutique' ).css( 'height', hauteur );
 	$( '.navgaucheboutique' ).css( 'height', hauteur );
@@ -280,6 +282,7 @@ $( document ).ready( function() {
 	 marginleftnouveaute = nouveaute.css('margin-left');
 	//console.log(marginleftnouveaute);
 	 marginleftnouveautenb = parseInt(marginleftnouveaute, 10);
+	// marginleftnouveautenbinitial = parseInt(marginleftnouveaute, 10);
 	//console.log(marginleftnouveautenb);
 	 counterRight = 0;
 	 counterLeft = 0;
@@ -293,9 +296,11 @@ $( document ).ready( function() {
 			marginleftnouveautenb = parseInt(marginleftnouveaute, 10);
 		}
 		marginleftnouveautenb = marginleftnouveautenb - largeurnouveauteitem;
+		//marginleftnouveautenbinitial = marginleftnouveautenb + largeurnouveauteitem;
 		$( '.contentnouveautes' ).css( 'margin-left', marginleftnouveautenb );
-		console.log(" marginleft: ");
-		console.log(marginleftnouveautenb);
+		//$( '.nouveautes' ).css( 'margin-left', marginleftnouveautenbinitial );
+		//console.log(" marginleft: ");
+		//console.log(marginleftnouveautenb);
 		counterRight += 1;
 		counterLeft -= 1;
 		if (counterRight >= 1){
@@ -318,8 +323,8 @@ $( document ).ready( function() {
 		}
 		marginleftnouveautenb = marginleftnouveautenb + largeurnouveauteitem;
 		$( '.contentnouveautes' ).css( 'margin-left', marginleftnouveautenb );
-		console.log(" marginleft: ");
-		console.log(marginleftnouveautenb);
+		//console.log(" marginleft: ");
+		//console.log(marginleftnouveautenb);
 		counterRight -= 1;
 		counterLeft += 1;
 		if (counterLeft >= -2){
@@ -330,8 +335,6 @@ $( document ).ready( function() {
 		}
 		
 });
-
-
 	
 			if (!jQuery.isEmptyObject(myFullpage) ) { // si homepage
 			
@@ -378,17 +381,6 @@ $grid.imagesLoaded().progress( function() {
   console.log(' image loaded');
 });
 
-/*$grid.imagesLoaded().always( function() {
-console.log('all images loaded');
-  $grid.isotope('layout');
-});*/
-	
-
-
-// layout Isotope after each image loads
-/*$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});*/
 
 
   var filterFns = {
@@ -510,20 +502,6 @@ $('.selectcollection').on( 'change', function() {
   
 });
 
-/*
-$( ".selecttitre" ).change(function() {
-  
-  var str = "";
-    $( ".selecttitre option:selected" ).each(function() {
-      str += $( this ).text() + " ";
-    });
-
-	var filterValue =  $(this).attr('data-filter'); 
-	console.log( filterValue );
-	filterValue = filterFns[ filterValue ] || filterValue;
-	$grid.isotope({ filter: filterValue });
-});
-*/
 	
 	
 	

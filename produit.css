@@ -29,6 +29,10 @@
 		width: 100%;
 	}
 	
+	#produit .cta {
+		margin-top: 15px;
+	}
+	
 			.padding0{
 			padding-left: 0;
 			padding-right: 0;
@@ -235,6 +239,7 @@ color : white;
 	text-align: left;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+	line-height: 1.4rem;
 	}
 
 .centerTab{
