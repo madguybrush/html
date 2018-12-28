@@ -132,11 +132,22 @@ color : white;
 	font-size: 0.7rem;
 	padding-top: 3rem; /*2rem;*/
 	background-color: white;
-	padding-right: 3rem;
+	padding-right: 0;
 	padding-left: 3rem;
 	letter-spacing: .08rem;
 	
 }
+
+		.prix2{
+		text-align: right;
+			font-size: 0.7rem;
+	padding-top: 3rem; /*2rem;*/
+	background-color: white;
+	padding-right: 3rem;
+	padding-left: 0;
+	letter-spacing: .08rem;
+	}
+	
 
 .cadreblanc{
 	background-color: white;
@@ -344,10 +355,7 @@ text-align: left;
 	}
 	
 	
-		.prix2{
-		text-align: right;
-	}
-	
+
 	
 		.showwhenmobile{
 		display: none;

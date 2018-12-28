@@ -233,7 +233,7 @@ padding: 0;
 
 .navbar-dark .navbar-nav .nav-link{
 	color: white;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	letter-spacing: 0.2em;
 	padding: 0;
 	margin: .5rem 1rem;
@@ -292,7 +292,8 @@ padding: 0;
 
 .sousmenu {
 	margin-bottom: 15%;
-	 animation-duration: 2s;
+	animation-duration: 2s;
+	margin-top: .3rem; 
 }
 
 .sousmenu a{
@@ -440,7 +441,8 @@ padding: 0;
 .fleximg{
 	/*margin-right: 10%;*/
 	/*margin-bottom: 10%;*/
-	 max-width: 80%;
+	 /*max-width: 80%;*/
+	  max-width: 250px;
 	 z-index: 4;
 }
 
