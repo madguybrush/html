@@ -267,6 +267,7 @@ $( document ).ready( function() {
 	//resized();
 	ajouterclasseAlpha();
 	isreset = 0;
+	$('#fp-nav.fp-right').addClass('d-none');
 	
 	 hauteur = $( '.contentnouveautes' ).outerHeight();
 	 hauteur = hauteur + $( '.contentnouveautestitre' ).outerHeight();
@@ -603,14 +604,21 @@ if(( isTouchDevice ) || (($(window).width() < 768))) {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
    } )( jQuery );
+   
+   
+   
+   	   $(window).load(function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+   //$('.container-loader').fadeOut();
+		
+		$('.container-loader').css('opacity', '0'); 
+		$('.container-loader').addClass('d-none ');
+		$('.loader').addClass('d-none ');
+		
+	$('#capricci').css('opacity', '1');  
+		$('#capricci').removeClass('d-none');
+		$('#fp-nav.fp-right').removeClass('d-none');
+});
