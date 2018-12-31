@@ -238,10 +238,15 @@ color : white;
 	font-weight: bold;
 	text-align: left;
 	margin-top: 2rem;
-	margin-bottom: 1rem;
+	
 	line-height: 1.4rem;
 	}
 
+.colgauche h4.visa{
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+}
+	
 .centerTab{
 width: 100%;
 margin: 0 auto;	

@@ -238,8 +238,8 @@ function displaysearchmobile(){
 	nouveaute = $('.contentnouveautes');
 	marginleftnouveaute = nouveaute.css('margin-left');
 	marginleftnouveautenb = parseInt(marginleftnouveaute, 10);
-			console.log(" marginleft resized: ");
-		console.log(marginleftnouveautenb);
+		//	console.log(" marginleft resized: ");
+	//	console.log(marginleftnouveautenb);
 	
 	//console.log(marginleftnouveaute);
 	//console.log("resized");
@@ -601,14 +601,7 @@ if(( isTouchDevice ) || (($(window).width() < 768))) {
 });
 
 
-	
-	
-	
-
-   } )( jQuery );
-   
-   
-   
+	   
    	   $(window).load(function(){
    // PAGE IS FULLY LOADED  
    // FADE OUT YOUR OVERLAYING DIV
@@ -627,4 +620,13 @@ if(( isTouchDevice ) || (($(window).width() < 768))) {
 		$('#fp-nav.fp-right').removeClass('d-none');
 		
 		$('#capricci').removeClass('d-none');
+		
+		$('.iconepanier').removeClass('d-none');
+		//$('.site').removeClass('d-none');
 });
+	
+	
+
+   } )( jQuery );
+   
+   
