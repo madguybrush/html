@@ -26,7 +26,7 @@
 	
 }
 #agenda h2{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	color: #030310;
 	font-weight: bold;
 	font-family: Montserrat, verdana;
@@ -35,7 +35,7 @@
 }
 
 #agenda h3{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: #A78A3C;
 	font-weight: bold;
 	font-family: Montserrat, verdana;
@@ -45,7 +45,8 @@
 }
 
 #agenda p{
-	font-size: 1rem;
+	font-size: .8rem;
+	letter-spacing: .05rem;
 	color: #030310;
 	font-family: 'Lora', serif;
 }
@@ -66,11 +67,11 @@ font-family: 'Lora', serif;
 
 #agenda .newslettertitle{
 	font-family: Montserrat, verdana;
-	font-size: 0.6rem;
+	font-size: 0.55rem;
 	font-weight: bold;
 	color: #A78A3C;
 	padding-top: 2rem;
-	letter-spacing: .2rem;
+	letter-spacing: .15rem;
 }
 
 #agenda .form-control{
@@ -120,12 +121,12 @@ font-family: 'Lora', serif;
 	
 	#agenda{
 		margin-left: 0;
-		margin-top:74px;
+		margin-top: 76px; /* 74*/
 		/*width: 100%;*/
 	}
 	
 	#agenda h1{
-		padding-top: 4rem;
+		padding-top: 1rem; /* 4*/
 	}
 	
 	#agenda .newslettertitle{
@@ -154,3 +155,20 @@ font-family: 'Lora', serif;
 }
 
 		}
+		
+		
+		@media only screen and (max-width: 768px){
+	
+			
+			#agenda .newslettertitle{
+
+	font-size: .7rem;
+	}
+	
+		#agenda{
+		margin-left: 0;
+		margin-top: 64px; /* 74*/
+		/*width: 100%;*/
+	}
+	
+	}

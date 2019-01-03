@@ -9,7 +9,7 @@
 	}
 	
 #boutique header{
-		padding-top: 1.5rem;
+		padding-top: 1rem;
 		padding-bottom: 1rem;
 		margin-left: 17%;
 		width: 83%;
@@ -86,7 +86,7 @@
 #boutique h2{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: #A78A3C;
 		padding-left: 2rem;
 		letter-spacing: .2rem;
@@ -96,7 +96,7 @@
 	#boutique h2.panier{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		color: #A78A3C;
 		padding-left: 0;
 	
@@ -111,7 +111,8 @@
 	#boutique .nouveautes h2{
 		font-family: Montserrat, sans-serif;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		text-transform: uppercase;
 		color: #fff;
 		padding-left: 2rem;
 		letter-spacing: .2rem;
@@ -207,7 +208,7 @@
 	padding-bottom: 1rem;
 	letter-spacing: .2rem;
 	color: rgba(145, 145, 145, 1);
-	font-size: 1rem;
+	font-size: .8rem;
 	margin: 0;
 	/*line-height: 1.5rem;*/
 	}
@@ -250,6 +251,17 @@
 		font-size: 1.2rem;
 		font-weight: bold;
 		color: #A78A3C;
+	}
+	
+	#boutique h3 a{
+			font-family: Piek;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: #A78A3C;
+	}
+	
+		#boutique h3 a:hover{
+			text-decoration: underline;
 	}
 	
 #boutique h4{
@@ -371,7 +383,7 @@ width: 4%;
 	
 			#boutique header{
 			width: 100%;
-			margin-top: 100px;
+			margin-top: 64px; /*100px;*/
 			margin-left:0;
 			margin-right:0;
 
@@ -404,10 +416,10 @@ width: 4%;
 }
 
 @media only screen and (max-width:767.98px){
-
+/*
 #boutique .quatrieme{
 	font-size: 1.1rem;
-}
+}*/
 
 #boutique .sommaire{
 	display: none;

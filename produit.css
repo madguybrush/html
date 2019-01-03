@@ -115,7 +115,7 @@ color : white;
 .coldroite{
 
 	/*padding-top: 20px;*/
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 	padding-left: 0rem; /*25px;*/
 	padding-right: 0rem; /*25px;*/
 	/*background-color: white;*/
@@ -124,7 +124,8 @@ color : white;
 
 
 .colgauche h3{
-	font-size: 1.2rem;
+	font-size: .9rem;
+	letter-spacing: 0.05rem;
 	color: #A78A3C;
 	font-weight: bold;
 	
@@ -173,9 +174,11 @@ color : white;
 	margin-top: 15px;
 	/*border: none;*/
 	color: white;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
+	letter-spacing: 0.07rem;
 	border: 2px solid #000946;
 	padding: 1rem;
+
 	width: 100%;
 	-webkit-appearance: none;
     -moz-appearance: none;
@@ -192,7 +195,6 @@ color : white;
 	background-color: white;
 	margin-top: 15px;
 	color: #000946;
-	font-size: 0.7rem;
 	padding: 1rem;
 	border: 2px solid #000946;
 	transition: all .3s ease-out;
@@ -300,7 +302,7 @@ text-align: left;
 	font-weight: 300;
 	/*margin-top: 1rem;*/
 	letter-spacing: .08rem;
-	line-height: 1.7rem;
+	line-height: 1.5rem;
 	padding-left: 6rem;
 	padding-right: 6rem;
 	padding-top: 3rem;
@@ -362,6 +364,8 @@ text-align: left;
 
 		.colbuttons{
 		padding-top:2rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 	
 	
@@ -490,7 +494,10 @@ margin-bottom: .5rem;
 
 .coldroite{
 	margin-top: 25px;
+	margin-bottom: 50px;
 }
+
+
 
 .colgauche{
 	margin-bottom: 0;
