@@ -250,8 +250,8 @@ height : 3px;
 
 #menuHaut{
 
-width: 100%
-	
+width: 100%;
+	text-align: center;
 }
 
 
@@ -387,7 +387,7 @@ padding: 0;
 .sousmenu {
 	margin-bottom: 15%;
 	animation-duration: 2s;
-	margin-top: .3rem; 
+	margin-top: .5rem; 
 }
 
 .sousmenu a{
