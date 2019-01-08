@@ -40,10 +40,12 @@ opacity: .5;
 	
 	#category h2{
 		color: #A78A3C;
-		font-size: 1.8rem;
-	font-family: Piek, verdana;
-	font-weight: bold;
-	letter-spacing: .08rem;
+		/*font-size: 1.8rem;
+	font-family: Piek, verdana;*/
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 1.1rem;
+	letter-spacing: .2rem; /*08*/
 	}
 	
 		#category .films{

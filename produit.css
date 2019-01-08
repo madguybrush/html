@@ -128,7 +128,7 @@ color : white;
 	letter-spacing: 0.05rem;
 	color: #A78A3C;
 	font-weight: bold;
-	
+	text-transform: uppercase;
 	}
 
 
@@ -178,7 +178,7 @@ color : white;
 	letter-spacing: 0.07rem;
 	border: 2px solid #000946;
 	padding: 1rem;
-
+	cursor: pointer;
 	width: 100%;
 	-webkit-appearance: none;
     -moz-appearance: none;
@@ -212,6 +212,7 @@ color : white;
 	font-size: 0.7rem;
 	padding: 1rem;
 	width: 100%;
+		cursor: pointer;
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

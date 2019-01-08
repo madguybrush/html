@@ -219,7 +219,9 @@ function displaysearchmobile(){
 		window_height = $( window ).height();
 		
 		hauteur = $( '.contentnouveautes' ).outerHeight();
-	 hauteur = hauteur + $( '.contentnouveautestitre' ).outerHeight();
+		//console.log(hauteur);
+	 hauteur = hauteur + 23 +  $( '.contentnouveautestitre' ).outerHeight();
+	 //console.log(hauteur);
 		fleche = (hauteur / 2) - 20;
 	$( '.navdroiteboutique' ).css( 'height', hauteur );
 	$( '.navgaucheboutique' ).css( 'height', hauteur );
@@ -269,8 +271,10 @@ $( document ).ready( function() {
 	isreset = 0;
 	$('#fp-nav.fp-right').addClass('d-none');
 	
-	 hauteur = $( '.contentnouveautes' ).outerHeight();
-	 hauteur = hauteur + $( '.contentnouveautestitre' ).outerHeight();
+	 hauteur = $( '.contentnouveautes' ).outerHeight(true);
+	 //console.log(hauteur);
+	 hauteur = hauteur + 23 + $( '.contentnouveautestitre' ).outerHeight(true);
+	// console.log(hauteur);
 	 fleche = (hauteur / 2) - 20;
 	$( '.navdroiteboutique' ).css( 'height', hauteur );
 	$( '.navgaucheboutique' ).css( 'height', hauteur );

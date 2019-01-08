@@ -136,7 +136,7 @@
 		padding: 0;
 		margin: 0;
 		position: absolute; /* fixed ? */
-		top: 100px;
+		top: 92px; /*100 quand header apdding bottom 1.5 */
 		right: 0;
 		width: 15%;
 		height: 100%;
@@ -150,7 +150,7 @@
 #boutique .navdroiteboutique{
 	
 	position: absolute; /* fixed ? */
-		top: 100px; 
+		top: 92px; /*100 quand header apdding bottom 1.5 */
 		right: 15%;
 	/*	background-color:black;*/
 		/*height: 100px;*/
@@ -172,7 +172,7 @@
 #boutique .navgaucheboutique{
 	
 	position: absolute; /* fixed ? */
-		top: 100px;
+		top: 92px; /*100 quand header apdding bottom 1.5 */
 		left: 17%;
 	/*	background-color:black;*/
 		height: 100px;
